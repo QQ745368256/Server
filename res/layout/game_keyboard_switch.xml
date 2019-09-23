@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff0f0e19" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <ImageButton android:id="@id/back" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="50.0dip" android:layout_height="wrap_content" android:src="@drawable/back_selector" android:contentDescription="@null" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffff9668" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_keyboard" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/headerView" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="72.0dip" android:layout_marginRight="72.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@drawable/game_operation_color" android:gravity="center" android:id="@id/lol_keyboard" android:background="@drawable/game_keyboard_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/lol_keyboard" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="@drawable/game_operation_color" android:gravity="center" android:id="@id/fps_keyboard" android:background="@drawable/game_keyboard_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:text="@string/fps_keyboard" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="72.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="72.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@drawable/game_operation_color" android:gravity="center" android:id="@id/dnf_keyboard" android:background="@drawable/game_keyboard_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/dnf_keyboard" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="@drawable/game_operation_color" android:gravity="center" android:id="@id/over_watch_keyboard" android:background="@drawable/game_keyboard_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:text="@string/over_watch_keyboard" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="72.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="72.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@drawable/game_operation_color" android:gravity="center" android:id="@id/car_keyboard" android:background="@drawable/game_keyboard_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/car_keyboard" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="@drawable/game_operation_color" android:gravity="center" android:id="@id/defined_keyboard" android:background="@drawable/game_keyboard_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:text="@string/defined_keyboard" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+            <Button android:textSize="16.0sp" android:textColor="@drawable/game_edit_color" android:gravity="center" android:id="@id/edit" android:background="@drawable/game_edit_selector" android:layout_width="116.0dip" android:layout_height="36.0dip" android:text="@string/HostEdit" />
+            <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/use" android:layout_width="116.0dip" android:layout_height="36.0dip" android:layout_marginLeft="50.0dip" android:text="@string/use" style="@style/buttonLogin" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/remote_file_layout" android:background="@drawable/file_search_shape" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+        <Button android:layout_gravity="center" android:id="@id/file_list_sort" android:background="@drawable/sort" android:layout_width="26.0dip" android:layout_height="23.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <View android:background="#ffcacaca" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0">
+            <com.oray.sunlogin.widget.EditTextView android:enabled="true" android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/etSearch" android:background="@drawable/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/remote_file_list_Search_directory" android:singleLine="true" android:imeOptions="actionDone" />
+            <ImageView android:id="@id/ivDeleteText" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_textfield_delete" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center|right" android:layout_width="26.0dip" android:layout_height="23.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/filter_icon" android:contentDescription="@null" />
+    </LinearLayout>
+</RelativeLayout>

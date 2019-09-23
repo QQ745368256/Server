@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+<!--        @integer/mtrl_chip_anim_duration改为0，@dimen/mtrl_chip_pressed_translation_z改为0-->
+        <objectAnimator android:duration="0" android:valueTo="0" android:valueType="floatType" android:propertyName="translationZ" />
+    </item>
+    <item android:state_enabled="true">
+<!--        @integer/mtrl_chip_anim_duration改为0-->
+        <objectAnimator android:duration="0" android:valueTo="0" android:valueType="floatType" android:propertyName="translationZ" />
+    </item>
+    <item>
+        <objectAnimator android:duration="0" android:valueTo="0" android:valueType="floatType" android:propertyName="translationZ" />
+    </item>
+</selector>

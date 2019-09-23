@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oray.sunlogin.widget.SwipeMenuLayout android:layout_width="fill_parent" android:layout_height="90.0dip" app:ios="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_content" android:background="@drawable/smart_socket_item_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="24.0sp" android:textColor="@color/normal_text" android:id="@id/time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morning" />
+                <TextView android:textSize="48.0sp" android:textColor="@color/normal_text" android:id="@id/time_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/timing" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_black66" android:id="@id/timing_switch_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/only_one_time" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/btnDelete" android:background="#ffff4a57" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="@string/g_delete" />
+</com.oray.sunlogin.widget.SwipeMenuLayout>

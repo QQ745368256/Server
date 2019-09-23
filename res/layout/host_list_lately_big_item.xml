@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="210.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_big_item" android:background="@drawable/shape_recently_bg_normal" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iv_big_list_bac" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+        <ImageView android:background="@drawable/big_item_bac_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_big_gradient_bac" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_online" android:background="@drawable/shape_online_bac" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_big_item_hostname" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxWidth="180.0dip" android:text="@string/Host_Name" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tv_big_item_lastVisitTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:00" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <LinearLayout android:gravity="bottom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/forget_password_text_color" android:ellipsize="end" android:id="@id/tv_big_item_host_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:maxWidth="160.0dip" android:text="@string/Host_Info" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/enable_text_color" android:ellipsize="end" android:id="@id/tv_big_item_bootstick_expiredate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxWidth="160.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_uu_device" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/to_top" />
+                    <ImageView android:id="@id/recent_to_top" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/recent_to_top" />
+                    <ImageView android:id="@id/recent_remote_help" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/recent_remote_help" />
+                    <ImageView android:id="@id/iv_shared" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/hostlist_icon_shared" />
+                    <ImageView android:id="@id/iv_wake" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/hostlist_icon_wake" />
+                    <ImageView android:id="@id/iv_lan" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/hostlist_icon_lan" />
+                    <ImageView android:id="@id/iv_message" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/hostlist_icon_message" />
+                    <ImageView android:id="@id/iv_platform" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:src="@drawable/hostlist_icon_windows" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

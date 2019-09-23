@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff141224" android:paddingLeft="2.5dip" android:paddingTop="5.0dip" android:paddingRight="2.5dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <Button android:id="@id/desktop_keyboard_q" android:text="Q" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_w" android:text="W" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_e" android:text="E" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_r" android:text="R" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_t" android:text="T" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_y" android:text="Y" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_u" android:text="U" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_i" android:text="I" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_o" android:text="O" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_p" android:text="P" style="@style/desktop_keyboard_fun_enjoy_btn" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <Button android:id="@id/desktop_keyboard_a" android:text="A" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_s" android:text="S" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_d" android:text="D" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_f" android:text="F" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_g" android:text="G" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_h" android:text="H" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_j" android:text="J" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_k" android:text="K" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_l" android:text="L" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <ImageView android:id="@id/desktop_keyboard_backspace" android:focusable="true" android:clickable="true" android:src="@drawable/keycode_backspace" android:scaleType="center" android:contentDescription="@null" style="@style/desktop_keyboard_fun_enjoy_btn" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <Button android:id="@id/desktop_keyboard_z" android:text="Z" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_x" android:text="X" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_c" android:text="C" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_v" android:text="V" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_b" android:text="B" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_n" android:text="N" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_m" android:text="M" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_space" android:text="Space" android:layout_weight="1.5" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_enter" android:text="Enter" android:layout_weight="1.5" style="@style/desktop_keyboard_fun_enjoy_btn" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/desktop_keyboard_1" android:text="1" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_2" android:text="2" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_3" android:text="3" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_4" android:text="4" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_5" android:text="5" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_6" android:text="6" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_7" android:text="7" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_8" android:text="8" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_9" android:text="9" style="@style/desktop_keyboard_fun_enjoy_btn" />
+        <Button android:id="@id/desktop_keyboard_0" android:text="0" style="@style/desktop_keyboard_fun_enjoy_btn" />
+    </LinearLayout>
+</LinearLayout>

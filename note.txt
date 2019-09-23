@@ -1,0 +1,4 @@
+双击shift全局搜索,find in path 搜索"我的"无果,证明中文字符串被编码过,需要解码,密钥应该在本地代码
+解决xml报错，修改格式为：xxx改为xxx
+APP签名问题
+com/yolanda/nohttp/db/DBManager.java数据库使用的是SQLite，账号密码

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:orientation="vertical" android:background="@color/white_bac" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/forget_password_text_color" android:layout_gravity="center_horizontal" android:id="@id/change_host_icon_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="@string/click_change_head" />
+                    <com.oray.sunlogin.widget.EditHostDetailView android:id="@id/edl_host_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:title_text="@string/HostName" />
+                    <com.oray.sunlogin.widget.EditHostDetailView android:id="@id/edl_host_remark" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_text="@string/remarks" />
+                </LinearLayout>
+                <com.oray.sunlogin.widget.CircleImageView android:id="@id/host_detail_icon" android:layout_width="76.0dip" android:layout_height="76.0dip" android:src="@drawable/circle_host_offline" android:layout_centerHorizontal="true" app:civ_border_color="@color/white_19" app:civ_border_width="2.0dip" />
+                <RelativeLayout android:id="@id/rl_upload_loading" android:background="@drawable/shape_circle_black" android:visibility="gone" android:layout_width="76.0dip" android:layout_height="76.0dip" android:layout_centerHorizontal="true">
+                    <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/dialog_loading" android:indeterminateBehavior="repeat" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <RelativeLayout android:id="@id/select_resolution" android:background="@drawable/text_more_cell_noline" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/forget_password_text_color" android:gravity="center|left" android:id="@id/host_resolution_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/hostdetail_resolution" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:gravity="center|right" android:id="@id/host_resolution" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:drawableRight="@drawable/drop_normal" android:drawablePadding="6.0dip" android:layout_toRightOf="@id/host_resolution_text" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/open_menu" android:background="@drawable/text_more_cell_noline" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/forget_password_text_color" android:gravity="center|left" android:id="@id/host_keycode" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/KeyCode" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:gravity="center|right" android:id="@id/keycode_num" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawableRight="@drawable/copy_img" android:drawablePadding="6.0dip" android:layout_toRightOf="@id/host_keycode" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/domain_access" android:background="@drawable/text_more_cell_noline" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/forget_password_text_color" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/domain_access_title" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:gravity="center|right" android:id="@id/domain_access_status" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/domain_access_close" android:drawableRight="@drawable/selector_right_arrow" android:drawablePadding="6.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:enabled="false" android:id="@id/setting_online_offline" android:background="@drawable/shape_toggle_layout_bac" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/forget_password_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_file_setup_message3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ToggleButton android:id="@id/tabmore_show_online_offline_host_toggleButton" style="@style/toggle_button" />
+                </RelativeLayout>
+                <RelativeLayout android:enabled="false" android:id="@id/bind_smart_socket" android:background="@drawable/shape_toggle_layout_bac" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/forget_password_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/host_bind_smart_socket" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:ellipsize="end" android:gravity="center|right" android:id="@id/smart_socket_name" android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="socket" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/timing_host" android:background="@drawable/text_more_cell_noline" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/forget_password_text_color" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/timing_host" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:gravity="center|right" android:id="@id/timing_host_data" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/domain_access_close" android:drawableRight="@drawable/selector_right_arrow" android:drawablePadding="6.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button android:textSize="@dimen/button_text_size" android:textColor="@color/guide_dialog_remind" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/delHostDeatil" android:background="@drawable/text_more_cell_noline" android:layout_width="fill_parent" android:layout_height="@dimen/g_button_height" android:layout_marginTop="10.0dip" android:layout_marginBottom="30.0dip" android:text="@string/DelHost" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

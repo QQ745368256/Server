@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content_view" android:background="@drawable/shape_hostlist_search" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/notification_icon" />
+        <RelativeLayout android:gravity="center" android:id="@id/content" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="#ffff8a56" android:ellipsize="marquee" android:id="@id/tips" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_tips" android:singleLine="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/close" android:layout_width="40.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/close_icon" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

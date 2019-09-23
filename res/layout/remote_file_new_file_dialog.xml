@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/remote_file_new_file_dialog_background" android:layout_width="320.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="22.0sp" android:textColor="@color/dark" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/remote_file_upload_newfile" />
+        <com.oray.sunlogin.widget.EditTextView android:textSize="16.0sp" android:textColor="#ff222222" android:gravity="center_vertical" android:id="@id/new_file_edit" android:background="@drawable/file_search" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/remote_file_upload_newfile" android:hint="@string/remote_file_new_file_dialog_hint" android:singleLine="true" style="@style/editTextTouchStyle" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="#ff0099ff" android:gravity="center" android:id="@id/new_file_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Cancel" android:layout_weight="1.0" />
+            <TextView android:textSize="20.0sp" android:textColor="#ff0099ff" android:gravity="center" android:id="@id/new_file_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

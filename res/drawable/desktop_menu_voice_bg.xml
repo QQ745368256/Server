@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/desktop_menu_voice_close_pressed_bg" />
+    <item android:state_checked="true" android:drawable="@drawable/desktop_menu_voice_close_normal_bg" />
+    <item android:state_checked="false" android:state_pressed="true" android:drawable="@drawable/desktop_menu_voice_open_pressed_bg" />
+    <item android:state_enabled="false" android:drawable="@drawable/desktop_menu_voice_close_normal_bg" />
+    <item android:drawable="@drawable/desktop_menu_voice_open_normal_bg" />
+</selector>

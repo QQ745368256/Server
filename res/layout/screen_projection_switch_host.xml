@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_screen_projection_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/g_headtitle_loading" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/ptr_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:divider="@null" android:dividerHeight="0.0dip" ptr:ptrAnimationStyle="flip" ptr:ptrLoadingViewBackground="@color/color_ptr_header" ptr:ptrShowIndicator="false" />
+            <RelativeLayout android:layout_gravity="center" android:id="@id/empty_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/host_empty_view" android:visibility="gone" layout="@layout/screen_host_list_empty" />
+                <include android:id="@id/discovery_empty_view" android:visibility="gone" layout="@layout/screen_discovery_list_empty" />
+            </RelativeLayout>
+        </LinearLayout>
+        <include layout="@layout/app_loading_frame_ani" />
+        <include layout="@layout/app_loading_frame_ani_special" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~  Copyright (c) 2019 Oray Inc. All rights reserverd.
+  ~  No Part of this file may be reproduced, stored
+  ~  in a retrieval system, or transmitted, in any form, or by any means,
+  ~  electronic, mechanical, photocopying, recording, or otherwise,
+  ~  without the prior consent of Oray Inc.
+  ~
+  ~  Author: qianwei
+  ~  Create on:  19-4-1 下午6:21
+  ~  FileName:keep.xml
+  ~
+  ~
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@layout/getui_notification,
+    @drawable/push,
+    @drawable/push_small" />

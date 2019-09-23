@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/g_headtitle_5" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white_bac" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dip">
+            <com.oray.sunlogin.widget.NumberProgressBar android:id="@id/tpb_firmware_update" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="51.0dip" android:layout_marginRight="20.0dip" app:progress_reached_bar_height="15.0dip" app:progress_reached_color="#ffff8d6b" app:progress_text_color="@color/white" app:progress_text_size="12.0sp" app:progress_unreached_bar_height="15.0dip" app:progress_unreached_color="#fff5f5f5" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/enable_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/firmware_update_tips" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center|left" android:layout_width="76.0dip" android:layout_height="76.0dip" android:src="@drawable/icon_kongkong" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/text_black22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/firmware_upate_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_gray_6A" android:id="@id/tv_upgrade_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/remote_file_upload_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/remote_file_upload_type_text" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_weight="1.0">
+            <Button android:textColor="@color/black" android:gravity="center" android:id="@id/uploadImgButton" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remote_file_upload_img" android:drawableTop="@drawable/img" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+            <Button android:textColor="@color/black" android:gravity="center" android:id="@id/uploadFileButton" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remote_file_upload_file" android:drawableTop="@drawable/document" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_weight="1.0">
+            <Button android:textColor="@color/black" android:gravity="center" android:id="@id/uploadMusicButton" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remote_file_upload_music" android:drawableTop="@drawable/music" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+            <Button android:textColor="@color/black" android:gravity="center" android:id="@id/uploadVideoButton" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remote_file_upload_video" android:drawableTop="@drawable/video" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="22.0dip" android:layout_weight="1.0">
+            <Button android:textColor="@color/black" android:gravity="center" android:id="@id/mydownloadButton" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_file_tabbar_mydownload_text" android:drawableTop="@drawable/my_download_icon" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+            <Button android:textColor="@color/black" android:gravity="center" android:id="@id/uploadNewFileButton" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_file_upload_newfile" android:drawableTop="@drawable/remote_file_upload_newfile" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

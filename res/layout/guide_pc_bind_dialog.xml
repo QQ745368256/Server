@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/shape_guide_bind_dialog_background" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="35.0sp" android:textColor="#ff333333" android:id="@id/text_fastcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="888 888 888" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/guide_dialog_remind" android:id="@id/text_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="888 888 888" />
+            <View android:background="#ffc5c5c5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="25.0dip" />
+            <Button android:textSize="22.0sp" android:textColor="@color/guide_dialog_remind" android:gravity="center" android:id="@id/btn_bind_cancel" android:background="@null" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/Cancel" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="right" android:id="@id/img_cancel" android:background="@android:color/transparent" android:padding="15.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/guide_pcbind_dialog_cancel_selector" android:contentDescription="@null" />
+    </FrameLayout>
+</RelativeLayout>

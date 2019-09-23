@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/share_article" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="35.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_wechat" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:background="@drawable/share_item_bg" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/wechat_for_article" android:contentDescription="@null" />
+                    <ImageView android:background="@drawable/share_item_bg" android:layout_width="54.0dip" android:layout_height="54.0dip" android:contentDescription="@null" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/weixin" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_wechat_moments" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/wechat_moments_for_article" android:contentDescription="@null" />
+                    <ImageView android:background="@drawable/share_item_bg" android:layout_width="54.0dip" android:layout_height="54.0dip" android:contentDescription="@null" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/weixin_moments" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_wechat_favorite" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/wechat_favorite_for_article" android:contentDescription="@null" />
+                    <ImageView android:background="@drawable/share_item_bg" android:layout_width="54.0dip" android:layout_height="54.0dip" android:contentDescription="@null" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/weixin_favorite" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_sina_weibo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/sina_weibo_for_article" android:contentDescription="@null" />
+                    <ImageView android:background="@drawable/share_item_bg" android:layout_width="54.0dip" android:layout_height="54.0dip" android:contentDescription="@null" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/sina_weibo" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="35.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_qq" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/qq_for_article" android:contentDescription="@null" />
+                    <ImageView android:background="@drawable/share_item_bg" android:layout_width="54.0dip" android:layout_height="54.0dip" android:contentDescription="@null" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="QQ" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_qq_zone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/qzone_for_article" android:contentDescription="@null" />
+                    <ImageView android:background="@drawable/share_item_bg" android:layout_width="54.0dip" android:layout_height="54.0dip" android:contentDescription="@null" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/qzone" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_copy_link" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/copy_link" android:contentDescription="@null" />
+                    <ImageView android:background="@drawable/share_item_bg" android:layout_width="54.0dip" android:layout_height="54.0dip" android:contentDescription="@null" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/copy_link" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@color/text_gray_d9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="24.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/cancel" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Cancel" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/g_ui_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_5" />
+    <RelativeLayout android:id="@id/content_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/web_login_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/web_login_confirm" android:layout_below="@id/web_login_icon" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true">
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/login" android:background="@drawable/space_button_selector" android:layout_width="215.0dip" android:layout_height="fill_parent" android:text="@string/login_confirm" />
+            <Button android:textColor="@drawable/hostadd_account_text_color" android:gravity="center" android:id="@id/cancel" android:background="@drawable/cancel_button_write" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="@string/cancel" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/qr_time_out_view" android:visibility="gone" layout="@layout/qr_time_out_ui" />
+</LinearLayout>

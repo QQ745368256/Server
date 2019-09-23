@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_guide_gradient_bac" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_guide" />
+        <TextView android:textSize="30.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/guide_androidinstall_tips4" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/guide_androidinstall_tips5" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_android_gif" android:layout_width="150.0dip" android:layout_height="250.0dip" android:layout_marginTop="40.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/layout_android_login" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.15">
+        <TextView android:textSize="20.0sp" android:textColor="#ffff8a56" android:id="@id/text_android_login_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_login_done" />
+    </LinearLayout>
+</LinearLayout>

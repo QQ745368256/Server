@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/guide_layout_bacground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_guide" />
+    <TextView android:textSize="26.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/guide_kvm_remind_connect1" />
+    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/guide_kvm_remind_connect2" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/guide_kvm_light" />
+    <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_confirm_light" android:background="@drawable/guide_bind_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="50.0dip" android:text="@string/guide_kvm_remind_connect3" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_bind_wifi" android:background="@drawable/guide_bind_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="30.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_bind_kvm2_btntext1" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_bind_kvm2_btntext2" android:layout_toRightOf="@id/tv_hint" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

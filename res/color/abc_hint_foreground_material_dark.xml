@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    @color/foreground_material_dark改为，@dimen/hint_pressed_alpha_material_dark改为
+    <item android:state_enabled="true" android:state_pressed="true" android:color="dark" android:alpha="dark" />
+<!--    @color/foreground_material_改为，@dimen/hint_alpha_material_改为-->
+    <item android:color="dark" android:alpha="dark" />
+</selector>

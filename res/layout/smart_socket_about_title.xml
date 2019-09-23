@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/white_normal" android:layout_width="fill_parent" android:layout_height="104.0dip" android:layout_marginTop="38.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="68.0dip" android:layout_height="76.0dip" android:layout_marginBottom="9.0dip" android:src="@drawable/smart_socket_about" />
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_socket" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="www.sunlogin.com" />
+    </LinearLayout>
+</RelativeLayout>

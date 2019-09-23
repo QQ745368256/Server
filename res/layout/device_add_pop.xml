@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/device_popup_bg" android:layout_width="295.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@drawable/host_add_pop_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/smart_device" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/close" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_device_popup" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="18.0dip" android:layout_below="@id/close">
+        <TextView android:textSize="14.0sp" android:textColor="@drawable/host_add_pop_text" android:gravity="center" android:id="@id/add_kk_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk" android:drawableTop="@drawable/kk_icon" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@drawable/host_add_pop_text" android:gravity="center" android:id="@id/add_bootstrap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/boot_stick" android:drawableTop="@drawable/bootstrap_icon" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@drawable/host_add_pop_text" android:gravity="center" android:id="@id/add_socket_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket" android:drawableTop="@drawable/socket_icon" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

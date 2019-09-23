@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ml="http://schemas.android.com/apk/res-auto">
+    <com.oray.sunlogin.widget.WaveRelativeLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent" ml:alphaValue="100" ml:color="#ffb2b2b2" ml:duration="200" ml:scale="1.1">
+        <com.oray.sunlogin.widget.RemoteDesktopView android:id="@id/remote_desktop_view" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_vgaunable" android:visibility="gone" android:layout_width="230.0dip" android:layout_height="230.0dip" android:src="@drawable/vga_unable" android:layout_centerInParent="true" android:contentDescription="@null" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tips" android:background="@drawable/loading_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/cursor_right" />
+    </com.oray.sunlogin.widget.WaveRelativeLayout>
+    <LinearLayout android:layout_gravity="bottom|center|right" android:orientation="vertical" android:id="@id/operation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/scroller_view" android:background="@drawable/spare_function_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/desktop_enjoy_cursor_center" />
+        <ImageView android:id="@id/defined_keyboard_view" android:background="@drawable/spare_function_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/desktop_enjoy_defined_keyboard" />
+        <ImageView android:id="@id/default_keyboard" android:background="@drawable/spare_function_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/desktop_enjoy_default_keyboard" />
+        <ImageView android:id="@id/spread_function" android:background="@drawable/spare_function_bg" android:padding="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/desktop_enjoy_spread_function" />
+    </LinearLayout>
+    <com.oray.sunlogin.widget.Mouse android:id="@id/remote_desktop_mouse" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.oray.sunlogin.widget.Scroller android:layout_gravity="center" android:id="@id/remote_desktop_circle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

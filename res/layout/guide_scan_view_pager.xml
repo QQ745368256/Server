@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/shape_guide_scan_bg" android:layout_width="fill_parent" android:layout_height="484.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="484.0dip">
+        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/vp_motionsettiong" android:layout_width="fill_parent" android:layout_height="415.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/btnClose" android:background="@null" android:padding="13.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/close_space_pop" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_pointers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

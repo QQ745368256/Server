@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/close_view" android:background="@color/enjoy_bg_color" android:layout_width="30.0dip" android:layout_height="60.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/close" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/desktop_enjoy_stop_operation" android:contentDescription="@null" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/exit_editor" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exit_editor" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:background="@color/enjoy_bg_color" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

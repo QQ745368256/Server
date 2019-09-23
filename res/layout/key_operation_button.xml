@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/keycode_button" android:background="@drawable/key_operation_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="A" />
+    <ImageButton android:id="@id/keycode_image" android:background="@drawable/key_operation_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mouse_operation_win" android:scaleType="center" android:contentDescription="@null" />
+</LinearLayout>

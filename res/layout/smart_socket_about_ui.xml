@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/free_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_5" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/smart_socket_about_title" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mac_view" android:background="@color/white_normal" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mac" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/mac_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:text="00:0E:23:56:CC:32" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white_normal" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SN" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/sn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:text="\ 9123456789" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white_normal" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_plug_model" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/model_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:text="C1" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/about_socket" android:background="@drawable/smart_socket_item_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray_9B" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/firmware_version" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff4a4a4a" android:id="@id/current_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0.0" android:drawableRight="@drawable/selector_right_arrow" android:drawablePadding="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/has_new_version" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="26.0dip" android:src="@drawable/g_red_dot" android:layout_alignParentRight="true" android:contentDescription="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ff848484" android:layout_gravity="bottom|center" android:id="@id/tv_version_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/VersionInfo2" />
+        <include layout="@layout/app_loading_frame_ani" />
+        <include layout="@layout/app_loading_frame_ani_special" />
+    </FrameLayout>
+</LinearLayout>

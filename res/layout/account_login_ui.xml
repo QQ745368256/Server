@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/g_ui_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="fill_parent" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_1" />
+                <com.oray.sunlogin.widget.KeyBoardResolverHeightLinearLayout android:orientation="vertical" android:id="@id/resolverView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/logo_bigs" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/sunlogin" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1.0" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="horizontal" android:layout_marginBottom="10.0dip" style="@style/loginEditStyle">
+                            <com.oray.sunlogin.widget.EditTextView android:textSize="14.0sp" android:textColor="#ff222222" android:textColorHint="#ff9b9b9b" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/editUsername" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/Login_Hint_Account" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionNext" style="@style/editTextTouchStyle" />
+                            <RelativeLayout android:layout_gravity="center|right" android:id="@id/show_account_view" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="fill_parent">
+                                <ImageView android:id="@id/show_account_list_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/drop_normal" android:layout_centerInParent="true" android:contentDescription="@null" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <com.oray.sunlogin.widget.EditTextView android:enabled="true" android:textSize="14.0sp" android:textColor="#ff222222" android:textColorHint="#ff9b9b9b" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/login_psw" android:focusable="true" android:focusableInTouchMode="true" android:hint="@string/Login_Hint_Password" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/loginEditStyle" />
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+                            <CheckBox android:textSize="12.0sp" android:textColor="@color/forget_password_text_color" android:id="@id/checkbox_autologin" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/Login_CB_Remember" android:drawableLeft="@drawable/checkbox_select" android:drawablePadding="5.0dip" style="@style/editTextTouchStyle" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/forget_password_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/accountlogin_forgetpassword_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accountlogin_forgetpassword" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <Button android:id="@id/buttonConnect" android:layout_marginTop="25.0dip" android:text="@string/Login_BT_Login" style="@style/buttonLogin" />
+                        <Button android:id="@id/login_register_button" android:layout_marginTop="20.0dip" android:text="@string/regist_account" style="@style/buttonRegister" />
+                    </LinearLayout>
+                </com.oray.sunlogin.widget.KeyBoardResolverHeightLinearLayout>
+            </LinearLayout>
+            <ListView android:layout_gravity="center_horizontal" android:id="@id/login_listview_accounts" android:background="@null" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="256.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="274.0dip" android:layout_marginRight="20.0dip" android:listSelector="#00000000" android:divider="@null" android:dividerHeight="0.0dip" />
+        </FrameLayout>
+    </ScrollView>
+</FrameLayout>

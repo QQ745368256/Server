@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="415.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_boost_device" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffcccccc" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/add_boost_device_tips" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_find_tips" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff2e67a1" android:id="@id/skip_sn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_sn" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/scan_bost_stick_bg" android:layout_width="280.0dip" android:layout_height="320.0dip" android:layout_marginTop="21.0dip" />
+</LinearLayout>

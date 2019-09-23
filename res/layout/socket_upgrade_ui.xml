@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/free_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/g_headtitle_5" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/contentView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginBottom="19.0dip" android:src="@drawable/socket_upgrade_icon" android:contentDescription="@null" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_version" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/guide_dialog_remind" android:id="@id/current_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0.0" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/upgrade_version_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket_version_tips" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/guide_dialog_remind" android:layout_gravity="center_horizontal" android:id="@id/upgrade_version" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@color/black22" android:id="@id/version_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket_version_info" />
+                <ScrollView android:layout_width="fill_parent" android:layout_height="100.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black22" android:gravity="center" android:id="@id/upgrade_version_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" />
+                </ScrollView>
+                <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/upgrade" android:layout_width="225.0dip" android:layout_height="@dimen/g_button_height" android:layout_marginTop="30.0dip" android:text="@string/firmware_update_title" style="@style/buttonLogin" />
+            </LinearLayout>
+            <include layout="@layout/app_loading_frame_ani" />
+            <include layout="@layout/app_loading_frame_ani_special" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/progress_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.oray.sunlogin.widget.CircularProgressView android:id="@id/circularProgressView" android:layout_width="188.0dip" android:layout_height="188.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

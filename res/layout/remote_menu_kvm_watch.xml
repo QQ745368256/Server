@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_footer" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/desktop_remote_toolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/desktop_menu_kvm_exit_viewgroup" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/desktop_menu_kvm_exit_checkbox" android:background="@drawable/desktop_menu_exit_bg" android:clickable="false" android:layout_width="26.0dip" android:layout_height="23.0dip" android:checked="true" android:button="@null" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/desktop_menu_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/remote_exit_control" android:layout_below="@id/desktop_menu_kvm_exit_checkbox" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/desktop_menu_voice_viewgroup" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/desktop_menu_voice_checkbox" android:background="@drawable/desktop_menu_voice_bg" android:clickable="false" android:layout_width="26.0dip" android:layout_height="23.0dip" android:layout_marginTop="3.0dip" android:checked="true" android:button="@null" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/desktop_menu_text_color" android:id="@id/tv_desktop_menu_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/remotedesktop_tools_voice_open" android:layout_below="@id/desktop_menu_voice_checkbox" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/desktop_menu_screen_recorder_viewgroup" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/desktop_menu_screen_recorder_checkbox" android:background="@drawable/selector_screen_recorder" android:clickable="false" android:layout_width="26.0dip" android:layout_height="23.0dip" android:checked="true" android:button="@null" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/desktop_menu_text_color" android:id="@id/tv_desktop_menu_screen_recorder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/remotedesktop_tools_screen_recorder" android:layout_below="@id/desktop_menu_screen_recorder_checkbox" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/desktop_menu_screenshot_viewgroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <CheckBox android:id="@id/desktop_menu_screenshot_checkbox" android:background="@drawable/selector_screen_shot" android:clickable="false" android:layout_width="26.0dip" android:layout_height="23.0dip" android:checked="false" android:button="@null" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/desktop_menu_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/remotedesktop_tools_screenshot" android:layout_below="@id/desktop_menu_screenshot_checkbox" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

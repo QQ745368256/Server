@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/free_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_5" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:src="@drawable/smart_socket_success" android:contentDescription="@null" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/smart_socket_add_success" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/please_set_device_name" />
+    <com.oray.sunlogin.widget.EditTextView android:enabled="true" android:textSize="14.0sp" android:textColor="#ff222222" android:textColorHint="#ff9b9b9b" android:gravity="center_vertical" android:id="@id/socket_name" android:paddingRight="14.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_marginTop="20.0dip" android:text="@string/smart_socket" android:ems="10" android:singleLine="true" android:inputType="text" style="@style/loginEditStyle" />
+    <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/confirm" android:layout_width="225.0dip" android:layout_height="@dimen/g_button_height" android:layout_marginTop="20.0dip" android:text="@string/Save" style="@style/buttonLogin" />
+</LinearLayout>

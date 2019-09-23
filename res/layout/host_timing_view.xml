@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_5" />
+    <RelativeLayout android:id="@id/change_verification_mode" android:background="@drawable/text_more_cell_noline" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:gravity="center_vertical" android:id="@id/title_view" android:layout_width="115.0dip" android:layout_height="fill_parent" android:text="@string/verification_mode" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:gravity="center_vertical" android:id="@id/verification_mode" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/access_password" android:layout_toRightOf="@id/title_view" />
+        <ImageButton android:background="@android:color/transparent" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/all_right_arrow_normal" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/account_view" android:background="@drawable/text_more_cell_noline" android:paddingLeft="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:gravity="center_vertical" android:id="@id/window_account_title" android:layout_width="115.0dip" android:layout_height="fill_parent" android:text="@string/window_account" />
+        <com.oray.sunlogin.widget.EditTextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:textColorHint="#ffcccccc" android:gravity="center_vertical" android:id="@id/window_account" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toRightOf="@id/window_account_title" android:inputType="text" android:imeOptions="actionNext" style="@style/editTextTouchStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/password_view" android:background="@drawable/text_more_cell_noline" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:gravity="center_vertical" android:id="@id/password_title" android:layout_width="115.0dip" android:layout_height="fill_parent" android:text="@string/account_password" />
+        <ImageButton android:id="@id/show_open_eye" android:background="@android:color/transparent" android:padding="15.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/close_eye_icon" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        <com.oray.sunlogin.widget.EditTextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:textColorHint="#ffcccccc" android:gravity="center_vertical" android:id="@id/password" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/show_open_eye" android:layout_toRightOf="@id/password_title" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/editTextTouchStyle" />
+    </RelativeLayout>
+    <Button android:id="@id/confirm" android:layout_marginTop="30.0dip" android:text="@string/Confirm" style="@style/buttonLogin" />
+</LinearLayout>

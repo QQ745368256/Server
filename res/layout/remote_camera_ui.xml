@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/g_ui_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.oray.sunlogin.widget.CameraView android:id="@id/cameraplay_camera_cameraview" android:background="#ff474747" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_camera_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/remote_toolbar_header" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <include android:id="@id/desktop_camera_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/desktop_remote_toolbar_height" android:layout_alignParentBottom="true" layout="@layout/remote_camera_toolbar" />
+    </RelativeLayout>
+</LinearLayout>

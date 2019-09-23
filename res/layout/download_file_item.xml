@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/text_more_cell_noline" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="67.5dip">
+        <ImageView android:id="@id/file_icon" android:background="@null" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/checkbox" android:layout_toRightOf="@id/file_icon">
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_color_input" android:ellipsize="end" android:gravity="center" android:id="@id/file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" style="@style/g_listitem_hostname_style" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/file_name">
+                <TextView android:textSize="14.0sp" android:textColor="@color/enable_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:singleLine="true" style="@style/g_listitem_hostdesc_style" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/enable_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:singleLine="true" style="@style/g_listitem_hostdesc_style" />
+            </LinearLayout>
+        </RelativeLayout>
+        <CheckBox android:id="@id/checkbox" android:background="@null" android:focusable="false" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@drawable/remote_file_checkbox_uncheck" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <View android:background="@color/bg_more_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

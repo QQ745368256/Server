@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/g_ui_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_5" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_trans_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+        <Button android:textSize="15.0sp" android:textColor="@color/tran_file_textcolor" android:gravity="center" android:id="@id/remote_file_upload_list" android:background="@drawable/hostadd_segment_bar_left_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/remote_file_tran_list_upload_list" android:layout_weight="1.0" />
+        <Button android:textSize="15.0sp" android:textColor="@color/tran_file_textcolor" android:gravity="center" android:id="@id/remote_file_download_list" android:background="@drawable/hostadd_segment_bar_right_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/remote_file_tran_list_download_list" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/remotefile_tran_segment_leftviewgroup" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/notrans" android:background="@null" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_file_tran_notran_message" android:drawableTop="@drawable/remote_file_tran_background" android:drawablePadding="20.0dip" />
+        <com.baoyz.swipemenulistview.MenuListView android:id="@id/upload_list" android:focusable="true" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@null" android:groupIndicator="@null" android:divider="@null" android:overScrollMode="never" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/remotefile_tran_segment_rightviewgroup" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/nodownload" android:background="@null" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_file_tran_notran_message" android:drawableTop="@drawable/remote_file_download_background" android:drawablePadding="20.0dip" />
+        <com.baoyz.swipemenulistview.MenuListView android:id="@id/download_list" android:focusable="true" android:visibility="invisible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@null" android:groupIndicator="@null" android:divider="@null" android:overScrollMode="never" />
+    </FrameLayout>
+</LinearLayout>

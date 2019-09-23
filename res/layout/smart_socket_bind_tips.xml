@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/free_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_5" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/bind_title" android:background="@drawable/smart_socket_bind_title" android:paddingLeft="30.0dip" android:paddingTop="5.0dip" android:paddingRight="30.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/smart_socket_bind_title" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff222222" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="37.0dip" android:text="@string/socket_bind_tips_one" android:drawableLeft="@drawable/bind_tips" android:drawablePadding="3.0dip" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="27.0dip" android:src="@drawable/socket_tip_one" android:scaleType="fitCenter" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff222222" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="24.0dip" android:text="@string/socket_bind_tips_two" android:drawableLeft="@drawable/bind_tips" android:drawablePadding="3.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffff8a56" android:gravity="center" android:id="@id/about_ac_recovery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="6.0dip" android:text="@string/ac_recovery_about" android:drawableLeft="@drawable/ac_recovery_about" android:drawablePadding="2.0dip" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="27.0dip" android:src="@drawable/socket_tip_two" android:scaleType="fitCenter" />
+            <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/confirm" android:layout_width="225.0dip" android:layout_height="@dimen/g_button_height" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:text="@string/i_know" style="@style/buttonLogin" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

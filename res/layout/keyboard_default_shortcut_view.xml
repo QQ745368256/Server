@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffbcc6cc" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="216.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="4.0dip">
+        <LinearLayout android:id="@id/ll_mouse_menu_copy" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/ctrl_c" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/copy" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_paste" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/ctrl_v" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/paste" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_cut" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/ctrl_x" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/cut" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_check_all" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/ctrl_a" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/check_all" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="4.0dip">
+        <LinearLayout android:id="@id/ll_mouse_menu_revoke" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/ctrl_z" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/revoke" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_save" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/ctrl_s" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/save" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_return_desktop" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/win_d" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/return_desktop" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_switch_window" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/win_tab" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/switch_window" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="4.0dip">
+        <LinearLayout android:id="@id/ll_mouse_menu_close_window" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/alt_f4" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/close_window" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_run" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/win_r" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/run" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_lock_system" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/win_l" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/lock_system" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_explorer" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/win_e" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/explorer" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:id="@id/ll_mouse_menu_task_manager" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:textSize="11.0sp" android:text="@string/ctrl_shift_esc" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/task_manager" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_ctrl_alt_del" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:textSize="11.0sp" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:text="@string/ctrl_alt_del" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_screenshots" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/alt_printscr" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/screenshots" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_mouse_menu_search" style="@style/desktop_keyboard_default_short_cut_lin">
+            <TextView android:text="@string/win_q" style="@style/desktop_keyboard_default_short_cut_text" />
+            <TextView android:text="@string/search" style="@style/desktop_keyboard_default_short_cut_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

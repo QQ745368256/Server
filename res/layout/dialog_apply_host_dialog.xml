@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:background="@drawable/spare_dialog_shape" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="100.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/to_develop_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff828282" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/apply_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/apply_host_tips1" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff828282" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/apply_host_tips2" />
+            </LinearLayout>
+            <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/apply" android:background="@drawable/space_button_selector" android:layout_width="fill_parent" android:layout_height="@dimen/g_button_height" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="20.0dip" android:text="@string/apply_host" android:layout_below="@id/to_develop_view" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/title_view" android:background="@drawable/apply_dialog_bg" android:layout_width="300.0dip" android:layout_height="150.0dip">
+            <RelativeLayout android:layout_gravity="right" android:id="@id/close" android:layout_width="40.0dip" android:layout_height="40.0dip">
+                <ImageView android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/close_apply_dialog" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

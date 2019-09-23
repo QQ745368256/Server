@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_normal_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/text_black22" android:id="@id/tv_lately_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/lately" android:layout_weight="1.0" />
+        <RelativeLayout android:id="@id/rl_lately_serch" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <Button android:id="@id/btn_lately_title_search" android:background="@drawable/seletor_title_search" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_lately_switch" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip">
+            <Button android:id="@id/btn_lately_title_switch_list" android:background="@drawable/seletor_title_small_list" android:padding="20.0dip" android:focusable="true" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_lately_add" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@id/btn_lately_title_add_host" android:background="@drawable/seletor_title_add_host" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_search_title" android:background="@drawable/bg_normal_shape" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/btn_lately_title_close_search" android:background="@null" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_search_clear" />
+        <EditText android:enabled="true" android:textColor="@color/text_color_input" android:gravity="center|left" android:id="@id/et_lately_title_search" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionDone" />
+        <Button android:id="@id/btn_lately_title_enter_search" android:background="@drawable/seletor_title_search" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+</FrameLayout>

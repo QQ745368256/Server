@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/g_ui_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_5" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@id/no_download_history" android:background="@null" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_file_mydownload_nodownload_message" android:drawableTop="@drawable/remote_file_download_background" android:drawablePadding="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <include android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/download_search_view" />
+                <ListView android:id="@id/mydownload" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:listSelector="@color/transparent" android:drawSelectorOnTop="false" android:cacheColorHint="@null" android:divider="@null" android:layout_weight="1.0" android:overScrollMode="never" />
+                <include android:id="@id/sort_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" layout="@layout/download_sort_view" />
+            </RelativeLayout>
+            <include android:id="@id/dialog_layout" layout="@layout/file_upload_dialog" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

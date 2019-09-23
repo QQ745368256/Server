@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_5" />
+    <include android:id="@id/host_detail_set_ui" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/host_setting_ui" />
+</LinearLayout>

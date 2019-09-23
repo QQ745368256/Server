@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_footer" android:layout_width="fill_parent" android:layout_height="@dimen/desktop_remote_toolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/rl_camera_toolbar_exit" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_camera_toolbar_exit" android:clickable="false" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/desktop_menu_exit_bg" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/desktop_menu_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_exit_control" android:layout_below="@id/iv_camera_toolbar_exit" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_camera_toolbar_overturn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_toolbar_icon_marginleft">
+            <ImageView android:id="@id/iv_camera_toolbar_overturn" android:clickable="false" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/bg_camera_overturn" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/desktop_menu_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_camera_overturn" android:layout_below="@id/iv_camera_toolbar_overturn" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_camera_toolbar_voice" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_toolbar_icon_marginleft">
+            <ImageView android:id="@id/iv_camera_toolbar_voice" android:clickable="false" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/cameraplay_voice_img" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/desktop_menu_text_color" android:id="@id/tv_camera_toolbar_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remotedesktop_tools_voice_open" android:layout_below="@id/iv_camera_toolbar_voice" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_camera_toolbar_screen_recorder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_toolbar_icon_marginleft">
+            <ImageView android:id="@id/iv_camera_toolbar_screen_recorder" android:clickable="false" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/selector_screen_recorder" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/desktop_menu_text_color" android:id="@id/tv_camera_toolbar_screen_recorder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remotedesktop_tools_screen_recorder" android:layout_below="@id/iv_camera_toolbar_screen_recorder" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_camera_toolbar_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_toolbar_icon_marginleft">
+            <ImageView android:id="@id/iv_camera_toolbar_more" android:clickable="false" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/desktop_menu_more_bg" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/desktop_menu_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/More" android:layout_below="@id/iv_camera_toolbar_more" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

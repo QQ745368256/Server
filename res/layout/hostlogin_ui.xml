@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_switch" />
+    <com.oray.sunlogin.widget.KeyBoardResolverHeightRelativeLayout android:id="@id/customlogin_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="25.0dip">
+        <include android:id="@id/layout_window_login" android:visibility="visible" layout="@layout/windowslogin" />
+        <include android:id="@id/layout_fast_code_password_login" android:visibility="gone" layout="@layout/customlogin" />
+    </com.oray.sunlogin.widget.KeyBoardResolverHeightRelativeLayout>
+</LinearLayout>

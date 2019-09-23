@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_smart_socket_offline" android:paddingLeft="30.0dip" android:paddingTop="34.0dip" android:paddingRight="30.0dip" android:paddingBottom="34.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/help_icon" android:contentDescription="@null" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_red_58" android:id="@id/offline_tips1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_socket_offline_hint_1" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_red_58" android:id="@id/offline_tips2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_socket_offline_hint_2" />
+</LinearLayout>

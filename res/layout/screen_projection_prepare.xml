@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_screen_projection_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_5" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.oray.sunlogin.widget.RecyclingImageView android:layout_gravity="center_horizontal" android:id="@id/prepare_screen_projection_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:text="@string/screen_projection_prepare_success" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip">
+                <View android:layout_gravity="center" android:background="#ff999999" android:layout_width="43.0dip" android:layout_height="1.0px" android:layout_marginRight="15.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switch_screen_projection_ways" />
+                <View android:layout_gravity="center" android:background="#ff999999" android:layout_width="43.0dip" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/screen_projection_ways" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_bg_screen_projection_ways" android:layout_width="0.0dip" android:layout_height="200.0dip" android:layout_weight="1.0">
+                        <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/screen_projection_scan_ways" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/switch_ways_scan" android:background="@drawable/space_button_selector" android:layout_width="120.0dip" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:text="@string/scan_screen_projection" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_bg_screen_projection_ways" android:layout_width="0.0dip" android:layout_height="200.0dip" android:layout_marginLeft="20.0dip" android:layout_weight="1.0">
+                        <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/screen_projection_host_ways" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/switch_ways_host" android:background="@drawable/space_button_selector" android:layout_width="120.0dip" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:text="@string/host_screen_projection" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/invite_friend" android:background="@drawable/shape_bg_screen_projection_ways" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/invite_friend_screen" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/switch_screen_ways" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_bg_screen_projection_ways" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="200.0dip" android:layout_weight="1.0">
+                        <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/ways_screen_host" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/host_list_ways" android:background="@drawable/space_button_selector" android:layout_width="120.0dip" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:text="@string/host_list_screen" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_bg_screen_projection_ways" android:layout_width="0.0dip" android:layout_height="200.0dip" android:layout_marginLeft="20.0dip" android:layout_weight="1.0">
+                        <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/ways_screen_discovery" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/discover_screen_ways" android:background="@drawable/space_button_selector" android:layout_width="120.0dip" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:text="@string/discovery_screen_ways" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/cancel" android:background="@drawable/shape_bg_screen_projection_ways" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/Cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

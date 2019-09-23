@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout android:background="#ffa9b8c1" android:paddingLeft="2.5dip" android:paddingTop="5.0dip" android:paddingRight="2.5dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_ctrl" app:text="Ctrl" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_shift" app:text="Shift" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_alt" app:text="Alt" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_win" app:image="@drawable/keycode_window" app:image_text="Win" app:user_image="true" style="@style/keycode_fun_style" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_q" app:text="Q" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_w" app:text="W" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_e" app:text="E" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_r" app:text="R" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_t" app:text="T" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_y" app:text="Y" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_u" app:text="U" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_i" app:text="I" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_o" app:text="O" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_p" app:text="P" style="@style/keycode_fun_style" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_a" app:text="A" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_s" app:text="S" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_d" app:text="D" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f" app:text="F" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_g" app:text="G" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_h" app:text="H" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_j" app:text="J" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_k" app:text="K" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_l" app:text="L" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_backspace" app:image="@drawable/keycode_backspace_normal" app:image_text="BackSpace" app:user_image="true" style="@style/keycode_fun_style" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_z" app:text="Z" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_x" app:text="X" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_c" app:text="C" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_v" app:text="V" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_b" app:text="B" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_n" app:text="N" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_m" app:text="M" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_space" android:layout_weight="1.5" app:text="Space" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_enter" android:layout_weight="1.5" app:text="Enter" style="@style/keycode_fun_style" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_1" app:text="1" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_2" app:text="2" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_3" app:text="3" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_4" app:text="4" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_5" app:text="5" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_6" app:text="6" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_7" app:text="7" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_8" app:text="8" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_9" app:text="9" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_0" app:text="0" style="@style/keycode_fun_style" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f1" app:text="F1" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f2" app:text="F2" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f3" app:text="F3" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f4" app:text="F4" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f5" app:text="F5" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f6" app:text="F6" style="@style/keycode_fun_style" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f7" app:text="F7" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f8" app:text="F8" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f9" app:text="F9" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f10" app:text="F10" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f11" app:text="F11" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_f12" app:text="F12" style="@style/keycode_fun_style" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_wave" android:layout_weight="0.65" app:default_second_text="~" app:default_used_second_text="true" app:text="`" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_esc" app:text="Esc" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_tab" app:text="Tab" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_prtScr" app:text="PrtScr" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_sorlk" app:text="ScrLK" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_pause" app:text="Pause" style="@style/keycode_fun_style" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <View android:layout_width="0.0dip" android:layout_height="43.0dip" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:layout_weight="0.65" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_up" android:layout_weight="0.65" app:image="@drawable/keycode_up" app:image_text="Up" app:user_image="true" style="@style/keycode_fun_style" />
+            <View android:layout_width="0.0dip" android:layout_height="43.0dip" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:layout_weight="0.65" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_insert" app:text="Ins" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_home" app:text="Home" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_pageup" app:text="PgUp" style="@style/keycode_fun_style" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_left" android:layout_weight="0.65" app:image="@drawable/keycode_left" app:image_text="Left" app:user_image="true" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_down" android:layout_weight="0.65" app:image="@drawable/keycode_down" app:image_text="Down" app:user_image="true" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_right" android:layout_weight="0.65" app:image="@drawable/keycode_right" app:image_text="Right" app:user_image="true" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_delete" app:text="Del" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_end" app:text="End" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_pageDn" app:text="PgDn" style="@style/keycode_fun_style" />
+        </TableRow>
+        <TableRow android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_less" app:default_second_text="_" app:default_used_second_text="true" app:text="-" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_plus" app:default_second_text="+" app:default_used_second_text="true" app:text="=" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_left_bracket" app:default_second_text="{" app:default_used_second_text="true" app:text="[" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_right_bracket" app:default_second_text="}" app:default_used_second_text="true" app:text="]" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_delimiter" app:default_second_text="|" app:default_used_second_text="true" app:text="@string/delimiter" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_colon" app:default_second_text=":" app:default_used_second_text="true" app:text=";" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_quot" app:default_second_text="@string/quot" app:default_used_second_text="true" app:text="‘" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_comma" app:default_second_text="@string/left_bracket" app:default_used_second_text="true" app:text="，" style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_point" app:default_second_text="@string/right_bracket" app:default_used_second_text="true" app:text="." style="@style/keycode_fun_style" />
+            <com.oray.sunlogin.widget.KeycodeButton android:id="@id/button_keycode_quest_mark" app:default_second_text="\?" app:default_used_second_text="true" app:text="/" style="@style/keycode_fun_style" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_5" />
+    <ImageView android:id="@id/iv_logo" android:contentDescription="@null" style="@style/logoImage" />
+    <com.oray.sunlogin.widget.EditTextView android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/account_add_editUsername" android:paddingRight="10.0dip" android:layout_marginBottom="10.0dip" android:hint="@string/account_name" android:inputType="text" android:imeOptions="actionNext" style="@style/editTextInputStyle" />
+    <LinearLayout android:orientation="horizontal" android:paddingRight="0.0dip" style="@style/editTextInputStyleLayout">
+        <com.oray.sunlogin.widget.EditTextView android:enabled="true" android:textSize="18.0sp" android:textColor="@color/text_color_input" android:textColorHint="#ff9b9b9b" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/account_add_password" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/account_password" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionDone" />
+        <ImageButton android:layout_gravity="center|right" android:id="@id/show_open_eye" android:background="@android:color/transparent" android:padding="15.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/close_eye_icon" android:contentDescription="@null" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+        <CheckBox android:textSize="12.0sp" android:textColor="@color/forget_password_text_color" android:id="@id/account_add_autologin" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/Login_CB_Remember" android:drawableLeft="@drawable/checkbox_select" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/forget_password_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/account_add_forgetpassword_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accountlogin_forgetpassword" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <Button android:id="@id/account_add_button_add" android:layout_marginTop="25.0dip" android:text="@string/account_add" style="@style/buttonLogin" />
+    <Button android:textSize="@dimen/button_text_size" android:textColor="@color/text_black4A" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/account_add_register_textview" android:background="@drawable/shape_round_white" android:layout_width="225.0dip" android:layout_height="@dimen/g_button_height" android:layout_marginTop="20.0dip" android:text="@string/account_add_regist" />
+</LinearLayout>

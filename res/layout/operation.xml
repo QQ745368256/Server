@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/remote_option_container" android:background="@drawable/shape_bg_pop" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/remote_option_vip_channel" android:visibility="gone" style="@style/tablerow_back_radus">
+                <ImageView android:id="@id/remote_option_vip_channel_imageview" android:src="@drawable/vip_channel" style="@style/operation_imageView" />
+                <TextView android:id="@id/remote_option_vip_channel_textview" android:text="@string/remotedesktop_tools_vip_channle_open" android:layout_toRightOf="@id/remote_option_vip_channel_imageview" style="@style/operation_textView" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/remote_option_screenshot" style="@style/tablerow_back_radus">
+                <ImageView android:id="@id/remote_option_screenshot_imageview" android:src="@drawable/screenshot_normal" style="@style/operation_imageView" />
+                <TextView android:text="@string/remotedesktop_tools_screenshot" android:layout_toRightOf="@id/remote_option_screenshot_imageview" style="@style/operation_textView" />
+            </RelativeLayout>
+            <View android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" />
+            <RelativeLayout android:id="@id/remote_option_lockscreen" style="@style/tablerow_back">
+                <ImageView android:id="@id/remote_option_lockscreen_imageView" android:src="@drawable/desktop_option_screen_lock_nomal_img" style="@style/operation_imageView" />
+                <TextView android:id="@id/remote_option_lockscreen_textview" android:text="@string/remote_desktop_optionbar_lockscreen" android:layout_toRightOf="@id/remote_option_lockscreen_imageView" style="@style/operation_textView" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/remote_option_blackscreen" style="@style/tablerow_back">
+                <ImageView android:id="@id/remote_option_blackscreen_imageview" android:background="@drawable/desktop_menu_blackscreen_bg" style="@style/operation_imageView" />
+                <TextView android:id="@id/remote_option_blackscreen_textview" android:text="@string/remotedesktop_tools_backscreen" android:layout_toRightOf="@id/remote_option_blackscreen_imageview" style="@style/operation_textView" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/remote_option_close_mouse" style="@style/tablerow_back">
+                <ImageView android:id="@id/remote_option_close_mouse_imageview" android:src="@drawable/desktop_option_screen_closemouse" style="@style/operation_imageView" />
+                <TextView android:id="@id/remote_option_close_mouse_textview" android:text="@string/remote_desktop_optionbar_closemouse" android:layout_toRightOf="@id/remote_option_close_mouse_imageview" style="@style/operation_textView" />
+            </RelativeLayout>
+            <View android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" />
+            <RelativeLayout android:id="@id/show_remote_desktop" style="@style/tablerow_back">
+                <ImageView android:id="@id/desktop_option_viewdesktop_image_view" android:src="@drawable/desktop_option_viewdesktop_img" style="@style/operation_imageView" />
+                <TextView android:text="@string/Operation2" android:layout_toRightOf="@id/desktop_option_viewdesktop_image_view" style="@style/operation_textView" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/lock_remote_desktop" style="@style/tablerow_back">
+                <ImageView android:id="@id/desktop_option_lockdesktop_imageview" android:src="@drawable/desktop_option_lockdesktop_img" style="@style/operation_imageView" />
+                <TextView android:text="@string/Operation4" android:layout_toRightOf="@id/desktop_option_lockdesktop_imageview" style="@style/operation_textView" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/change_remote_conversation" style="@style/tablerow_back_radus">
+                <ImageView android:id="@id/remote_option_switch_session_imageview" android:src="@drawable/remote_option_switch_session" style="@style/operation_imageView" />
+                <TextView android:text="@string/Operation1" android:layout_toRightOf="@id/remote_option_switch_session_imageview" style="@style/operation_textView" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" style="@style/button_operation_conversation" />
+            </RelativeLayout>
+            <View android:id="@id/remote_desktop_showdesk_line" android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" />
+            <RelativeLayout android:id="@id/restart_remote_host" style="@style/tablerow_back">
+                <ImageView android:id="@id/desktop_option_restart_imageview" android:src="@drawable/desktop_option_restart_img" style="@style/operation_imageView" />
+                <TextView android:text="@string/Operation5" android:layout_toRightOf="@id/desktop_option_restart_imageview" style="@style/operation_textView" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/close_remote_host" style="@style/tablerow_back">
+                <ImageView android:id="@id/desktop_option_shutdown_imageview" android:src="@drawable/desktop_option_shutdown_img" style="@style/operation_imageView" />
+                <TextView android:text="@string/Operation6" android:layout_toRightOf="@id/desktop_option_shutdown_imageview" style="@style/operation_textView" />
+            </RelativeLayout>
+            <View android:id="@id/remote_desktop_shutdown_line" android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" />
+            <RelativeLayout android:id="@id/operation_gesture_guide" style="@style/tablerow_back">
+                <ImageView android:id="@id/desktop_option_gesture_imageview" android:src="@drawable/desktop_option_gesture_img" style="@style/operation_imageView" />
+                <TextView android:text="@string/OperationInstruction" android:layout_toRightOf="@id/desktop_option_gesture_imageview" style="@style/operation_textView" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" style="@style/button_operation_conversation" />
+            </RelativeLayout>
+            <View android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <Button android:textSize="@dimen/button_text_size" android:textColor="@color/white" android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/Cancel" style="@style/button_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

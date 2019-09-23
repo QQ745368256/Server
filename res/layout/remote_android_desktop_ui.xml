@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ml="http://schemas.android.com/apk/res-auto">
+    <com.oray.sunlogin.widget.WaveRelativeLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent" ml:alphaValue="100" ml:color="#ffb2b2b2" ml:duration="200" ml:scale="1.1">
+        <com.oray.sunlogin.widget.RemoteDesktopView android:id="@id/remote_desktop_view" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </com.oray.sunlogin.widget.WaveRelativeLayout>
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/spread_function" android:background="@drawable/spare_function_bg" android:padding="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/desktop_enjoy_spread_function" android:contentDescription="@null" />
+</FrameLayout>

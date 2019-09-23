@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/editorView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ffff8d58" android:gravity="center" android:id="@id/reset" android:background="@drawable/edit_bg_selector" android:layout_width="72.0dip" android:layout_height="34.0dip" android:text="@string/reset" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffff8d58" android:gravity="center" android:id="@id/complete" android:background="@drawable/complete_bg_selector" android:layout_width="72.0dip" android:layout_height="34.0dip" android:layout_marginLeft="4.0dip" android:text="@string/Complete" />
+    </LinearLayout>
+    <ImageButton android:id="@id/operation_view" android:background="@color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/operation" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/switch_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:gravity="center" android:id="@id/edit" android:background="@drawable/key_operation_round_button" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_50" android:text="@string/HostEdit" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:gravity="center" android:id="@id/switch_keyboard" android:background="@drawable/key_operation_round_button" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_12" android:layout_marginRight="@dimen/dp_5" android:text="@string/switch_keyboard" android:layout_toLeftOf="@id/edit" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:gravity="center" android:id="@id/exit" android:background="@drawable/key_operation_round_button" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_12" android:text="@string/remote_file_tabbar_exit_text" android:layout_toRightOf="@id/edit" />
+    </RelativeLayout>
+</RelativeLayout>

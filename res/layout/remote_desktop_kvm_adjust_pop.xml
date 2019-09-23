@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#ff00070e" android:layout_width="fill_parent" android:layout_height="180.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="180.0dip">
+        <Button android:textSize="12.0sp" android:textColor="#ffcccccc" android:gravity="center" android:id="@id/complete" android:background="@drawable/g_button_complete_selector" android:layout_width="65.0dip" android:layout_height="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/Complete" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/offset" android:layout_width="121.0dip" android:layout_height="121.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/left" android:background="@android:color/transparent" android:layout_width="22.5dip" android:layout_height="31.0dip" android:src="@drawable/left_arrow_selector" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/right" android:background="@android:color/transparent" android:layout_width="22.5dip" android:layout_height="31.0dip" android:src="@drawable/right_arrow_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/up" android:background="@android:color/transparent" android:layout_width="31.0dip" android:layout_height="22.5dip" android:src="@drawable/up_arrow_selector" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/down" android:background="@android:color/transparent" android:layout_width="31.0dip" android:layout_height="22.5dip" android:src="@drawable/down_arrow_selector" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

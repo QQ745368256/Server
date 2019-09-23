@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_5" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/webView" android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include layout="@layout/app_loading_frame_ani" />
+            <include layout="@layout/app_loading_frame_ani_special" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

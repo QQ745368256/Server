@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    @color/abc_search_url_text_改为，-->
+<!--    @color/abc_search_url_text_改为，-->
+<!--    @color/abc_search_url_text_改为，-->
+    <item android:state_pressed="true" android:color="pressed" />
+    <item android:state_selected="true" android:color="selected" />
+    <item android:color="normal" />
+</selector>

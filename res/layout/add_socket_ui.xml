@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:background="@drawable/free_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/g_headtitle_5" />
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/socket_guide_icon" android:layout_below="@id/title" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black22" android:gravity="center" android:id="@id/socket_tip" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/socket_guide_tips1" android:layout_below="@id/icon" />
+    <TextView android:textColor="@color/black22" android:gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/socket_guide_tips2" android:drawableLeft="@drawable/light_tips" android:drawablePadding="5.0dip" android:layout_above="@id/confirm" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/confirm" android:layout_marginBottom="40.0dip" android:text="@string/confirm" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/buttonLogin" />
+</RelativeLayout>

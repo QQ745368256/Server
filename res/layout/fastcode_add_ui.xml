@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_5" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/fast_code_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/fast_login_icon" android:contentDescription="@null" />
+            <com.oray.sunlogin.widget.EditTextView android:textColor="@color/text_black22" android:id="@id/fastcode_input" android:hint="@string/fastcode_fastaccess_text" android:maxLength="11" android:inputType="number" android:imeOptions="actionDone" style="@style/editTextInputStyle" />
+            <Button android:id="@id/send_request_btn" android:layout_marginTop="30.0dip" android:text="@string/fastcode_sendrequest" style="@style/buttonLogin" />
+        </LinearLayout>
+        <include layout="@layout/app_loading_frame_ani" />
+        <include layout="@layout/app_loading_frame_ani_special" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/splash_second" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <ImageView android:id="@id/splash_title" android:background="@drawable/shape_splash_bg" android:layout_width="140.0dip" android:layout_height="39.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="55.0dip" android:src="@drawable/splash_title" android:contentDescription="@null" />
+    <ImageView android:layout_width="224.0dip" android:layout_height="119.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="18.0dip" android:src="@drawable/splash_second_title" android:layout_below="@id/splash_title" />
+</RelativeLayout>

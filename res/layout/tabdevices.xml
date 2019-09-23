@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="70.0dip" layout="@layout/g_lately_device_title" />
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout android:id="@id/ptrFrameLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.oray.sunlogin.recylerview.utils.FixedRecyclerView android:id="@id/rv" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include android:id="@id/empty" layout="@layout/device_empty_view" />
+            </LinearLayout>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+        <com.oray.sunlogin.indexBar.IndexBar android:layout_gravity="center|right" android:id="@id/indexBar" android:paddingRight="5.0dip" android:layout_width="25.0dip" android:layout_height="300.0dip" app:indexBarPressBackground="@android:color/transparent" app:indexBarTextColor="#ff6a6a6a" app:indexBarTextSize="10.0sp" />
+        <TextView android:textSize="40.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center|right" android:id="@id/tvSideBarHint" android:background="@drawable/loading_bg" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="50.0dip" />
+        <include layout="@layout/app_loading_frame_ani" />
+        <include layout="@layout/app_loading_frame_ani_special" />
+    </FrameLayout>
+</LinearLayout>

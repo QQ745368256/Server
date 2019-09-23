@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_smart_function_bg" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/not_found_boot_stick" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/bind_boot_stick_tips" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="24.0dip">
+            <ImageView android:id="@id/boot_stick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/boot_stick_bg" android:contentDescription="@null" />
+            <LinearLayout android:orientation="vertical" android:id="@id/boot_stick_get_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_toRightOf="@id/boot_stick" android:layout_centerInParent="true">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/boot_stick_tips" android:singleLine="true" />
+                <TextView android:textSize="13.0sp" android:textColor="#ffff8a56" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/get_more" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="22.0dip">
+            <ImageView android:id="@id/smart_socket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/smart_socket" android:contentDescription="@null" />
+            <LinearLayout android:orientation="vertical" android:id="@id/smart_socket_get_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_toRightOf="@id/smart_socket" android:layout_centerInParent="true">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/smart_socket_tips" android:singleLine="true" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/smart_socket_tips_2" android:singleLine="true" />
+                <TextView android:textSize="13.0sp" android:textColor="#ffff8a56" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/get_more" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/text_gray_d9" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="24.0dip" />
+        <LinearLayout android:id="@id/have_device_view" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <Button android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/close" android:background="@drawable/function_left_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Close" android:layout_weight="1.0" />
+            <View android:background="@color/text_gray_d9" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <Button android:textSize="14.0sp" android:textColor="#ffff8a56" android:gravity="center" android:id="@id/have_device" android:background="@drawable/function_right_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/have_devices" android:layout_weight="1.0" />
+        </LinearLayout>
+        <Button android:textSize="17.0sp" android:textColor="#ffff8a56" android:gravity="center" android:id="@id/i_know" android:background="@drawable/function_button_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/i_know" />
+    </LinearLayout>
+</RelativeLayout>

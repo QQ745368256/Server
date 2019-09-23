@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_button_wifitype_unchecked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <EditText android:textSize="16.0dip" android:textColor="@color/enable_text_color" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/et_wifiname" android:background="@drawable/bg_input_wifi" android:paddingLeft="10.0dip" android:layout_width="275.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:hint="@string/pls_input_wifiname" style="@style/editTextTouchStyle" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/rg_wifitype" android:focusable="true" android:clickable="true" android:layout_width="170.0dip" android:layout_height="35.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:checkedButton="@id/rbtn_encryption">
+            <RadioButton android:textSize="16.0dip" android:textColor="@drawable/selector_text_wifitype" android:gravity="center" android:id="@id/rbtn_encryption" android:background="@drawable/selector_btn_wifitype" android:focusable="true" android:clickable="true" android:layout_width="80.0dip" android:layout_height="35.0dip" android:button="@null" android:text="@string/encryption" />
+            <RadioButton android:textSize="16.0dip" android:textColor="@drawable/selector_text_wifitype" android:gravity="center" android:id="@id/rbtn_noencryption" android:background="@drawable/selector_btn_wifitype" android:focusable="true" android:clickable="true" android:layout_width="80.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:button="@null" android:text="@string/noencryption" />
+        </RadioGroup>
+        <EditText android:textSize="16.0dip" android:textColor="@color/enable_text_color" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/et_wifipwd" android:background="@drawable/bg_input_wifi" android:paddingLeft="10.0dip" android:layout_width="275.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:hint="@string/pls_input_wifipwd" style="@style/editTextTouchStyle" />
+        <View android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+        <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_addwifi_cancel" android:background="#fff5f5f5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Cancel" android:layout_weight="1.0" />
+            <View android:background="#ffdbdbdb" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_addwifi_confirm" android:background="#fff5f5f5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/confirm" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

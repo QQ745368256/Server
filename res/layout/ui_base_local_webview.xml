@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/g_ui_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/webView" android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/app_loading_frame_ani" />
+        <include layout="@layout/app_loading_frame_ani_special" />
+    </FrameLayout>
+</LinearLayout>

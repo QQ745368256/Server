@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_login_item" android:focusable="false" android:focusableInTouchMode="false" style="@style/editTextInputStyleLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff292929" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/textview_account" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/imageview_deleteicon" android:layout_width="wrap_content" android:layout_height="50.0dip" android:src="@drawable/icon_textfield_delete" />
+</LinearLayout>

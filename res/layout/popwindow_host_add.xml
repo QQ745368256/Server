@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/free_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="right" android:id="@id/rl_close_addpopwindow" android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/close_device_popup" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/sketch_map_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:src="@drawable/sketch_map" android:contentDescription="@null" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/normal_text" android:layout_gravity="center_horizontal" android:id="@id/sketch_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/sketch_tips" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:id="@id/download_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/download_client_url_tips" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/switch_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/rl_recognizeCode_add" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_recognizeCode_add" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/add_host_recognizecode" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+                <ImageView android:background="@drawable/share_item_bg" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/hostadd_recognizecode" android:layout_below="@id/iv_recognizeCode_add" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/rl_create_host" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/rl_normalHost_add" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_normalHost_add" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/add_host_generate" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+                <ImageView android:background="@drawable/share_item_bg" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/hostadd_normal" android:layout_below="@id/iv_normalHost_add" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/rl_lan_add" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_lan_add" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/add_host_lan" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+                <ImageView android:background="@drawable/share_item_bg" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/hostadd_lan" android:layout_below="@id/iv_lan_add" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip" android:layout_above="@id/switch_view">
+        <TextView android:textColor="#ff999999" android:id="@id/enterprise_specific" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:text="@string/enterprise_specific" android:layout_centerInParent="true" />
+        <View android:background="#ffc7c7c7" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_toLeftOf="@id/enterprise_specific" android:layout_centerInParent="true" />
+        <View android:background="#ffc7c7c7" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_toRightOf="@id/enterprise_specific" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:background="#ffbcc6cc" android:paddingLeft="2.5dip" android:paddingTop="5.0dip" android:paddingRight="2.5dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <Button android:id="@id/btn_id_f1" android:text="F1" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_f2" android:text="F2" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_f3" android:text="F3" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_f4" android:text="F4" style="@style/desktop_keyboard_fun_btn_land" />
+        <RelativeLayout android:id="@id/btn_id_wave" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text="~" style="@style/desktop_fun_text_top" />
+            <TextView android:text="`" style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+        <Button android:id="@id/btn_id_esc" android:text="Esc" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_tab" android:text="Tab" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_prtScr" android:text="PrtScr" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_scrLk" android:text="ScrLK" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_pause" android:text="Pause" style="@style/desktop_keyboard_fun_btn_land" />
+    </TableRow>
+    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <Button android:id="@id/btn_id_f5" android:text="F5" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_f6" android:text="F6" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_f7" android:text="F7" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_f8" android:text="F8" style="@style/desktop_keyboard_fun_btn_land" />
+        <View android:layout_height="33.0dip" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btn_id_top" android:clickable="true" android:src="@drawable/keycode_up" android:scaleType="center" android:contentDescription="@null" style="@style/desktop_keyboard_fun_btn_land" />
+        <View android:layout_height="33.0dip" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_id_ins" android:text="Ins" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_home" android:text="Home" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_pgup" android:text="PgUp" style="@style/desktop_keyboard_fun_btn_land" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <Button android:id="@id/btn_id_f9" android:text="F9" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_f10" android:text="F10" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_f11" android:text="F11" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_f12" android:text="F12" style="@style/desktop_keyboard_fun_btn_land" />
+        <ImageView android:id="@id/btn_id_left" android:clickable="true" android:src="@drawable/keycode_left" android:scaleType="center" android:contentDescription="@null" style="@style/desktop_keyboard_fun_btn_land" />
+        <ImageView android:id="@id/btn_id_bottom" android:clickable="true" android:src="@drawable/keycode_down" android:scaleType="center" android:contentDescription="@null" style="@style/desktop_keyboard_fun_btn_land" />
+        <ImageView android:id="@id/btn_id_right" android:clickable="true" android:src="@drawable/keycode_right" android:scaleType="center" android:contentDescription="@null" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_del" android:text="Del" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_end" android:text="End" style="@style/desktop_keyboard_fun_btn_land" />
+        <Button android:id="@id/btn_id_pgdn" android:text="PgDn" style="@style/desktop_keyboard_fun_btn_land" />
+    </TableRow>
+    <TableRow android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/btn_id_less" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text="_" style="@style/desktop_fun_text_top" />
+            <TextView android:text="-" style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn_id_plus" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text="+" style="@style/desktop_fun_text_top" />
+            <TextView android:text="=" style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn_id_left_bracket" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text="{" style="@style/desktop_fun_text_top" />
+            <TextView android:text="[" style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn_id_right_bracket" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text="}" style="@style/desktop_fun_text_top" />
+            <TextView android:text="]" style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn_id_delimiter" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text="|" style="@style/desktop_fun_text_top" />
+            <TextView android:text="@string/delimiter" style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn_id_colon" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text=":" style="@style/desktop_fun_text_top" />
+            <TextView android:text=";" style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn_id_quot" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text="@string/quot" style="@style/desktop_fun_text_top" />
+            <TextView android:text="‘" style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn_id_comma" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text="@string/left_bracket" style="@style/desktop_fun_text_top" />
+            <TextView android:text="," style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn_id_point" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text="@string/right_bracket" style="@style/desktop_fun_text_top" />
+            <TextView android:text="." style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn_id_quest_mark" style="@style/desktop_keyboard_fun_btn_land">
+            <TextView android:text="\?" style="@style/desktop_fun_text_top" />
+            <TextView android:text="/" style="@style/desktop_fun_text_bottom" />
+        </RelativeLayout>
+    </TableRow>
+</TableLayout>

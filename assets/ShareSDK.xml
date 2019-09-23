@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<SinaWeibo AppKey="1360846261" AppSecret="f149c401ed7ba8e196df741164cc716b" ShareByAppClient="true" Enable="true" RedirectUrl="https://sunlogin.oray.com" />
+<TencentWeibo Enable="false" />
+<Douban Enable="false" />
+<QZone AppId="100862312" AppKey="290b2d51427cad0f35edf83bbf11eea3" ShareByAppClient="true" Enable="true" />
+<Renren Enable="false" />
+<KaiXin Enable="false" />
+<Facebook Enable="false" />
+<Twitter Enable="false" />
+<Evernote Enable="false" />
+<FourSquare Enable="false" />
+<GooglePlus Enable="false" />
+<Instagram Enable="false" />
+<LinkedIn Enable="false" />
+<Tumblr Enable="false" />
+<Email Enable="false" />
+<ShortMessage Enable="false" />
+<Wechat AppId="wx03baf06cbc1db165" AppSecret="bbb32ad65a87ef54f592d4dc418a5fb4" BypassApproval="false" ShareByAppClient="true" Enable="true" />
+<WechatMoments AppId="wx03baf06cbc1db165" AppSecret="bbb32ad65a87ef54f592d4dc418a5fb4" BypassApproval="false" ShareByAppClient="true" Enable="true" />
+<QQ AppId="100862312" AppKey="290b2d51427cad0f35edf83bbf11eea3" ShareByAppClient="true" Enable="true" />
+<Instapaper Enable="false" />
+<Pocket Enable="false" />
+<YouDao Enable="false" />
+<Pinterest Enable="false" />
+<Flickr Enable="false" />
+<Dropbox Enable="false" />
+<VKontakte Enable="false" />
+<WechatFavorite AppId="wx03baf06cbc1db165" AppSecret="bbb32ad65a87ef54f592d4dc418a5fb4" BypassApproval="false" ShareByAppClient="true" Enable="true" />
+<Yixin Enable="false" />
+<YixinMoments Enable="false" />
+<Mingdao Enable="false" />
+<Line Enable="false" />
+<WhatsApp Enable="false" />
+<KakaoTalk Enable="false" />
+<KakaoStory Enable="false" />
+<FacebookMessenger Enable="false" />
+<Alipay Enable="false" />
+<AlipayMoments Enable="false" />
+<Dingding Enable="false" />
+<Youtube Enable="false" />
+<Meipai Enable="false" />
+<Telegram Enable="false" />
+<Cmcc Enable="false" />
+<Reddit Enable="false" />
+<Telecom Enable="false" />
+<Accountkit Enable="false" />
+<Douyin Enable="false" />
+</DevInfor>

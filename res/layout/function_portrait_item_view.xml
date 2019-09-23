@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/content_view" android:background="@drawable/function_item_selector" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_margin="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/function_item_record_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/desktop_enjoy_open_sound" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/function_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/remote_camera_switch_definition" android:layout_below="@id/function_item_record_img" android:layout_centerHorizontal="true" />
+</RelativeLayout>

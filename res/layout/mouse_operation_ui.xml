@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_game_key_operation_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/mouse_operation_direction_view" layout="@layout/mouse_operation_direction" />
+    <include android:id="@id/mouse_operation_mouse_view" layout="@layout/mouse_operation_mouse" />
+    <include android:id="@id/mouse_operation_scroll_view" layout="@layout/mouse_operation_scroll" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#4c000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/close_view" android:background="#4c000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/rl_weixin_pay_ways" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/weixin_pay_ways" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/weixin_pay_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/weixin_pay_selector" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/textcolor_popwindow_host_add" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/weixin_pay_way" android:layout_below="@id/weixin_pay_icon" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/alipay_ways" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:id="@id/alipay_pay_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alipay_selector" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/textcolor_popwindow_host_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/alipay_way" android:layout_below="@id/alipay_pay_icon" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageButton android:layout_gravity="center|right|top" android:id="@id/close" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="25.0dip" android:src="@drawable/bg_headtitle_right_delete_selector" android:contentDescription="@null" />
+</LinearLayout>

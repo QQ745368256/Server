@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/g_dialog_background" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="20.0sp" android:textColor="#ff2f2f2f" android:ellipsize="end" android:gravity="center" android:id="@id/text_title" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="this is title" android:singleLine="true" android:layout_centerHorizontal="true" />
+        <View android:background="#fff29900" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/text_title" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff575757" android:ellipsize="end" android:gravity="center|left" android:id="@id/text_message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="this is dialog message" />
+        <View android:background="#ffc5c5c5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/text_message" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_below="@id/g_dialog_temp_line2">
+            <Button android:textSize="16.0sp" android:textColor="#ff0091ff" android:gravity="center" android:id="@id/button_click1" android:background="@drawable/g_dialog_confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Confirm" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#ffc5c5c5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/text_message" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <Button android:textSize="16.0sp" android:textColor="#ff0091ff" android:gravity="center" android:id="@id/button_click2" android:background="@drawable/g_dialog_confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Cancel" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#ffc5c5c5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/text_message" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <Button android:textSize="16.0sp" android:textColor="#ff0091ff" android:gravity="center" android:id="@id/button_click3" android:background="@drawable/g_dialog_confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Cancel" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

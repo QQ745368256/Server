@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/qr_time_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="31.0dip" android:text="@string/qr_time_out" android:layout_below="@id/qr_time_out" />
+    <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/rescan" android:background="@drawable/space_button_selector" android:layout_width="215.0dip" android:layout_height="50.0dip" android:layout_marginBottom="40.0dip" android:text="@string/qr_rescan" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

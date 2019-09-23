@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    @color/bright_foreground_disabled_material_改为-->
+    <item android:state_enabled="false" android:color="dark" />
+<!--    @color/bright_foreground_material_改为-->
+    <item android:color="dark" />
+</selector>

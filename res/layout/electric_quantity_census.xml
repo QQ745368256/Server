@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/free_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerView" android:layout_width="fill_parent" android:layout_height="57.0dip">
+        <ImageButton android:id="@id/back_view" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/back_selector" android:contentDescription="@null" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/electric_quantity_census" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.oray.sunlogin.widget.CustomScrollView android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/headerView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:paddingTop="31.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/enable_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_day_quantity" />
+                <TextView android:textSize="44.0sp" android:textStyle="bold" android:textColor="#ff2cccff" android:id="@id/current_day_quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="41.0dip">
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/enable_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/current_electric" />
+                            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/current_electric" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:background="#ffe8e8e8" android:paddingTop="10.0dip" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_weight="0.0" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/enable_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/current_power_waste" />
+                            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/current_power" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="#ffe8e8e8" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/enable_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/current_consumption_time" />
+                            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/current_consumption_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:background="#ffe8e8e8" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_weight="0.0" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/enable_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/current_switch_time" />
+                            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/current_switch_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/electric_census" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/electric_census_tv" android:paddingLeft="20.0dip" android:paddingTop="14.0dip" android:paddingRight="20.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/electric_use_census" android:drawableRight="@drawable/host_timing_arrow" />
+                <View android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/electric_log" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/electric_log_tv" android:paddingLeft="20.0dip" android:paddingTop="14.0dip" android:paddingRight="20.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/electric_use_log" android:drawableRight="@drawable/host_timing_arrow" />
+                <View android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/first_info_day" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="16.0dip" />
+                <RelativeLayout android:id="@id/first_info_view" android:paddingLeft="40.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <ImageView android:id="@id/first_info_online_status" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/shape_offline_bac" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/first_info_message" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/first_info_online_status" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/first_info_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/second_info_day" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" />
+                <RelativeLayout android:id="@id/second_info_view" android:paddingLeft="40.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <ImageView android:id="@id/second_info_online_status" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/shape_online_bac" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/second_info_message" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/second_info_online_status" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/second_info_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.oray.sunlogin.widget.CustomScrollView>
+</RelativeLayout>

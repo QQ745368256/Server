@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:background="#b3333333" android:layout_width="fill_parent" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/remain_pop_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:text="@string/remain_time" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tv_remain_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/remain_pop_tips" android:layout_centerInParent="true" />
+    <ImageButton android:id="@id/close_remain_pop" android:background="@drawable/transparent" android:layout_width="15.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/desktop_menu_exit_normal_bg" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+</RelativeLayout>

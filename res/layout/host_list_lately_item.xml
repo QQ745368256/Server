@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oray.sunlogin.widget.SwipeMenuLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="76.0dip" app:ios="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/content_view" android:background="@drawable/text_more_cell_noline" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip">
+        <FrameLayout android:id="@id/fl_computer_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.oray.sunlogin.widget.CircleImageView android:layout_gravity="center" android:id="@id/computer_image" android:background="@null" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/circle_host_online" android:contentDescription="@null" app:civ_border_color="@color/white_19" app:civ_border_width="2.0dip" />
+            <ImageView android:layout_gravity="right" android:id="@id/iv_red_dot" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/g_red_dot" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/fl_computer_image" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/rl_hostname" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/text_black22" android:ellipsize="end" android:id="@id/lblhostname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" android:text="@string/Host_Name" android:singleLine="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_black22" android:id="@id/tv_lastVisitTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:00" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/rl_hostname">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/forget_password_text_color" android:ellipsize="end" android:id="@id/host_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:maxWidth="160.0dip" android:text="@string/Host_Info" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/enable_text_color" android:ellipsize="end" android:id="@id/boot_stick_expiredate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxWidth="160.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/uu_device" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/to_top" />
+                    <ImageView android:id="@id/iv_hostlist_icon_shared" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/hostlist_icon_shared" />
+                    <ImageView android:id="@id/iv_hostlist_icon_wake" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/hostlist_icon_wake" />
+                    <ImageView android:id="@id/iv_hostlist_icon_lan" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/hostlist_icon_lan" />
+                    <ImageView android:id="@id/iv_hostlist_icon_message" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/hostlist_icon_message" />
+                    <ImageView android:id="@id/iv_hostlist_icon_platform" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="wrap_content" android:src="@drawable/hostlist_icon_windows" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/btnTop" android:background="#ffff8a56" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="@string/to_top" />
+    <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/btnCancelTop" android:background="#ffd9dee4" android:layout_width="100.0dip" android:layout_height="fill_parent" android:text="@string/cancel_to_top" />
+    <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/btnDelete" android:background="#ffff4a57" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="@string/g_delete" />
+</com.oray.sunlogin.widget.SwipeMenuLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="#ffffffff" android:id="@id/button_keycode_define_1" android:background="@drawable/keycode_definedfun_btn_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_marginBottom="0.0dip" style="@style/keycode_fun_style_defined" />
+    <Button android:textColor="#ffffffff" android:id="@id/button_keycode_define_2" android:background="@drawable/keycode_definedfun_btn_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_marginBottom="0.0dip" style="@style/keycode_fun_style_defined" />
+    <Button android:textColor="#ffffffff" android:id="@id/button_keycode_define_3" android:background="@drawable/keycode_definedfun_btn_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_marginBottom="0.0dip" style="@style/keycode_fun_style_defined" />
+    <Button android:textColor="#ffffffff" android:id="@id/button_keycode_define_4" android:background="@drawable/keycode_definedfun_btn_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_marginBottom="0.0dip" style="@style/keycode_fun_style_defined" />
+    <Button android:textColor="#ffffffff" android:id="@id/button_keycode_define_5" android:background="@drawable/keycode_definedfun_btn_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_marginBottom="0.0dip" style="@style/keycode_fun_style_defined" />
+</LinearLayout>

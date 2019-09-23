@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/g_ui_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/remote_file_title" layout="@layout/g_headtitle_5" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/remote_file_layout" android:background="@drawable/file_search_shape" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/remote_file_title">
+            <Button android:layout_gravity="center" android:id="@id/file_list_sort" android:background="@drawable/sort" android:layout_width="26.0dip" android:layout_height="23.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <View android:background="#ffcacaca" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.oray.sunlogin.widget.EditTextView android:textSize="16.0sp" android:textColor="#ff222222" android:id="@id/etSearch" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/remote_file_list_Search_directory" android:singleLine="true" android:imeOptions="actionDone" style="@style/editTextTouchStyle" />
+                <ImageView android:id="@id/ivDeleteText" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_textfield_delete" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:contentDescription="@null" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center|right" android:layout_width="26.0dip" android:layout_height="23.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/filter_icon" android:contentDescription="@null" />
+        </LinearLayout>
+        <RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_below="@id/remote_file_layout">
+            <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/remotefile_pullrefresh" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:transcriptMode="disabled" android:cacheColorHint="@null" android:divider="@null" android:overScrollMode="never" ptr:ptrAnimationStyle="flip" ptr:ptrShowIndicator="false" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+            <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/enum_remote_file_failed_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/remote_file_enum_remote_file_failed" />
+            <include android:id="@id/remotefile_loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/g_loading_popup" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/sort_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/sort_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="95.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true">
+                <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/time_sort" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/remote_file_file_list_sort_dialog_time_sort" android:layout_weight="1.0" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/filename_sort" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remote_file_file_list_sort_dialog_filename_sort" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/upload_dialog_layout" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/upload_dialog_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/remote_file_upload_dialog_message" />
+                <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/upload_dialog_button" android:background="@drawable/upload_dialog_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/remote_file_upload_dialog_button_text" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

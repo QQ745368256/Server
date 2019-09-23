@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="92.0dip" android:layout_height="84.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contentView" android:background="@drawable/selector_host_choose_bac" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="4.0dip">
+        <ImageView android:id="@id/item_hostservice_imageview" android:layout_width="45.0dip" android:layout_height="45.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0sp" android:textColor="@color/text_black22" android:ellipsize="middle" android:id="@id/item_hostservice_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_unactivity_red" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/g_red_dot" android:layout_toLeftOf="@id/item_hostservice_textview" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/privilege_img" android:visibility="visible" android:layout_width="34.0dip" android:layout_height="18.0dip" android:layout_marginLeft="-22.0dip" android:src="@drawable/privilege_en" android:layout_toRightOf="@id/contentView" android:contentDescription="@null" />
+</RelativeLayout>

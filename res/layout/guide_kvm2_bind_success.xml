@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/kvm2_bind_success_bac" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_kvm2_close" android:background="@drawable/guide_skip_selector" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/Close" android:layout_alignParentRight="true" />
+        <TextView android:textSize="30.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:text="@string/guide_bind_success" android:drawableTop="@drawable/guide_kmv2_bind_ok" android:drawablePadding="15.0dip" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="26.0sp" android:textColor="#ffffffff" android:id="@id/tv_kvm2_succ_sn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/guide_kvm2_add_success" />
+            <Button android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_kvm2_succ" android:background="@drawable/guide_bind_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="40.0dip" android:text="@string/guide_check_now" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

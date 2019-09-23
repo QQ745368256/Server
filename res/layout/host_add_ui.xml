@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_5" />
+    <com.oray.sunlogin.widget.EditTextView android:textColor="@color/text_black22" android:id="@id/hostName" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/hostadd_host_holder" android:maxLength="20" android:imeOptions="actionNext" style="@style/editTextInputStyle" />
+    <com.oray.sunlogin.widget.EditTextView android:textColor="@color/text_black22" android:id="@id/hostDesc" android:layout_marginBottom="30.0dip" android:hint="@string/Describe" android:maxLength="20" android:imeOptions="actionDone" style="@style/editTextInputStyle" />
+    <Button android:id="@id/saveInfo" android:text="@string/Save" style="@style/buttonLogin" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_5" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RadioGroup android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerInParent="true">
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/ip_settingui_textcolor_selector" android:gravity="center" android:id="@id/btn_dhcp" android:background="@drawable/selector_ip_setting_left" android:layout_width="100.0dip" android:layout_height="40.0dip" android:checked="false" android:button="@null" android:text="@string/ip_dhcp" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/ip_settingui_textcolor_selector" android:gravity="center" android:id="@id/btn_static" android:background="@drawable/selector_ip_setting_right" android:layout_width="100.0dip" android:layout_height="40.0dip" android:checked="true" android:button="@null" android:text="@string/ip_static" />
+        </RadioGroup>
+        <com.oray.sunlogin.widget.IPEditText android:id="@id/ipet_address" android:background="@color/white_bac" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" />
+        <com.oray.sunlogin.widget.IPEditText android:id="@id/ipet_subnet_mask" android:background="@color/white_bac" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0dip" />
+        <com.oray.sunlogin.widget.IPEditText android:id="@id/ipet_gateway" android:background="@color/white_bac" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0dip" />
+        <com.oray.sunlogin.widget.IPEditText android:id="@id/ipet_dns" android:background="@color/white_bac" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0dip" />
+        <RadioButton android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_ip_save" android:layout_width="225.0dip" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:checked="false" android:button="@null" android:text="@string/save" style="@style/buttonLogin" />
+    </LinearLayout>
+</LinearLayout>

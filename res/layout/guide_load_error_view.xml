@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/guide_layout_bacground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" android:layout_width="fill_parent" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_guide" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/load_image" android:layout_width="fill_parent" android:layout_height="350.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/guide_know_kongkong" android:contentDescription="@null" />
+    <Button android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_kvm_buy" android:background="@drawable/guide_bind_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="60.0dip" android:text="@string/guide_understand_kvm" />
+    <Button android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_had_kvm" android:background="@drawable/guide_bind_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="60.0dip" android:text="@string/bind_kvm_add" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/bg_tab_more" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/my_member" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="58.0dip" android:layout_alignParentRight="true" />
+            <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/service_level" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="8.0dip" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/account_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/service_level" android:layout_centerHorizontal="true">
+                <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="account" />
+                <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/vip_level" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/service_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/account_level" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.oray.sunlogin.widget.RecyclingImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/host_item" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/host" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/host_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/data_expire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                    <com.oray.sunlogin.widget.RecyclingImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/data_expire" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/host_date_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_other_function" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/service_info">
+                <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <RelativeLayout android:id="@id/tabmore_my_welfare" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/tabmore_my_welfare_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/my_welfare" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/my_welfare" android:drawablePadding="10.0dip" android:layout_below="@id/tabmore_my_welfare_icon" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <RelativeLayout android:id="@id/tab_more_sunlight" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/tab_more_sunlight_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sunlight" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/tabmore_sun_store" android:drawablePadding="10.0dip" android:layout_below="@id/tab_more_sunlight_icon" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <RelativeLayout android:id="@id/tab_more_exchange" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/tab_more_exchange_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/exchange_icon" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/my_exchange" android:drawablePadding="10.0dip" android:layout_below="@id/tab_more_exchange_icon" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center|left" android:id="@id/tabmore_recommand_view" android:background="@drawable/text_more_cell_noline" android:layout_width="fill_parent" android:layout_height="@dimen/tabmore_cell_height">
+                    <TextView android:textSize="@dimen/tabmore_textcolor" android:textColor="@color/text_black22" android:gravity="center_vertical" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="@dimen/tabmore_cell_height" android:text="@string/more_recommend" />
+                    <com.oray.sunlogin.widget.RecyclingImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_mine_hardware_store" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center|left" android:id="@id/tab_more_my_download" android:background="@drawable/text_more_cell_noline" android:layout_width="fill_parent" android:layout_height="@dimen/tabmore_cell_height">
+                    <TextView android:textSize="@dimen/tabmore_textcolor" android:textColor="@color/text_black22" android:gravity="center_vertical" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="@dimen/tabmore_cell_height" android:text="@string/remote_file_tabbar_mydownload_text" />
+                    <com.oray.sunlogin.widget.RecyclingImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_mine_download" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center|left" android:id="@id/tabmore_about_button" android:background="@drawable/text_more_cell_noline" android:layout_width="fill_parent" android:layout_height="@dimen/tabmore_cell_height">
+                    <TextView android:textSize="@dimen/tabmore_textcolor" android:textColor="@color/text_black22" android:gravity="center_vertical" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="@dimen/tabmore_cell_height" android:text="@string/more_about_help" />
+                    <com.oray.sunlogin.widget.RecyclingImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_mine_about" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center|left" android:id="@id/tabmore_share" android:background="@drawable/text_more_cell_noline" android:layout_width="fill_parent" android:layout_height="@dimen/tabmore_cell_height" android:layout_marginTop="20.0dip">
+                    <Button android:textSize="@dimen/tabmore_textcolor" android:textColor="@color/text_black22" android:gravity="center_vertical" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="@dimen/tabmore_cell_height" android:text="@string/share_friend" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffff8a56" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/share_tips" android:drawableRight="@drawable/icon_mine_recommend" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center|left" android:id="@id/tabmore_grade" android:background="@drawable/text_more_cell_noline" android:layout_width="fill_parent" android:layout_height="@dimen/tabmore_cell_height">
+                    <TextView android:textSize="@dimen/tabmore_textcolor" android:textColor="@color/text_black22" android:gravity="center_vertical" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="@dimen/tabmore_cell_height" android:text="@string/give_mark" />
+                    <com.oray.sunlogin.widget.RecyclingImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_mine_score" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_appreciate" android:background="@drawable/shape_circle_praise" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="15.0dip">
+                    <com.oray.sunlogin.widget.RecyclingImageView android:id="@id/space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_praise" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:id="@id/space_number" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/space_number" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageButton android:id="@id/scan_view" android:background="@null" android:padding="15.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/scan_icon" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/setting_view" android:background="@null" android:padding="15.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/setting_icon" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <ImageButton android:layout_gravity="center" android:id="@id/unread_message_view" android:background="@null" android:padding="15.0dip" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/message" android:layout_toLeftOf="@id/setting_view" android:contentDescription="@null" />
+    </RelativeLayout>
+</RelativeLayout>

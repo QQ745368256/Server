@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/free_control_tip" android:layout_width="wrap_content" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="10.0dip" android:text="@string/free_service_tips" />
+    <TextView android:textSize="13.0sp" android:textColor="#ffff6638" android:id="@id/speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:text="@string/upgrade_speed" />
+    <ImageButton android:id="@id/close" android:background="@color/transparent" android:padding="8.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/close_apply_dialog" android:contentDescription="@null" />
+</LinearLayout>

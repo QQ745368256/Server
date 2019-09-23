@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/free_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/g_headtitle_5" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <View android:background="@color/white_normal" android:layout_width="fill_parent" android:layout_height="103.0dip" android:layout_marginTop="38.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.oray.sunlogin.widget.CircleImageView android:layout_gravity="center_horizontal" android:id="@id/hostIcon" android:layout_width="76.0dip" android:layout_height="76.0dip" android:src="@drawable/circle_host_offline" app:civ_border_color="@color/white_19" app:civ_border_width="2.0dip" />
+                    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/bind_tips" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:text="@string/have_been_bind" android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/shutdown_select" android:background="@drawable/smart_socket_item_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/forget_password_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/shutdown_close_power" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black22" android:gravity="center|right" android:id="@id/shut_down_status" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/never_close" android:drawableRight="@drawable/selector_right_arrow" android:drawablePadding="6.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_yellow_56" android:id="@id/shutdown_tip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/shutdown_socket_tips" />
+            <LinearLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_yellow_56" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/shutdown_socket_tips2" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/shut_down_tips" android:layout_width="74.0dip" android:layout_height="144.0dip" android:src="@drawable/shutdown_tips" android:contentDescription="@null" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/button_text_size" android:textColor="#ffff0042" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/cancelBind" android:background="@drawable/smart_socket_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/g_button_height" android:layout_marginTop="10.0dip" android:layout_marginBottom="30.0dip" android:text="@string/cancel_bind" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

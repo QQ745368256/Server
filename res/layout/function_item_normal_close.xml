@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content_view_enable" android:background="@drawable/function_item_selector" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_margin="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="#ffff725f" android:id="@id/show_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="NEW" android:layout_alignParentRight="true" />
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/function_item_record_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/desktop_enjoy_open_sound" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/function_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/remotedesktop_tools_voice_open" android:layout_below="@id/function_item_record_img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

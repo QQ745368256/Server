@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="62.5dip">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/text_more_cell_noline" android:layout_width="fill_parent" android:layout_height="62.0dip">
+            <Button android:layout_gravity="center" android:id="@id/file_icon" android:background="@drawable/document" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textColor="@color/dark" android:ellipsize="end" android:gravity="center|left" android:id="@id/file_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="我的计算机" android:singleLine="true" android:layout_weight="1.0" style="@style/g_listitem_hostname_style" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/gray" android:gravity="center|left" android:id="@id/update_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="我的计算机" style="@style/g_listitem_hostdesc_style" />
+                    <TextView android:textColor="@color/gray" android:gravity="center" android:id="@id/file_size" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="2.3M" style="@style/g_listitem_hostdesc_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip">
+                <com.oray.sunlogin.widget.RoundProgressBar android:layout_gravity="center|right" android:id="@id/roundProgressBar" android:background="@drawable/remote_file_pause" android:focusableInTouchMode="false" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="20.0dip" android_custom:finishBackground="@drawable/remote_file_continue" android_custom:max="100" android_custom:roundColor="@android:color/transparent" android_custom:roundProgressColor="#ffff8226" android_custom:roundWidth="2.0dip" />
+                <Button android:gravity="center" android:layout_gravity="center" android:background="@drawable/remote_file_clear" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="20.0dip" android:button="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/bg_more_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

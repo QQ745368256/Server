@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/detail_menu_copy_selector" android:id="@id/copy" android:title="@string/Copy" />
+    <item android:icon="@drawable/detail_menu_email_selector" android:id="@id/sendEmail" android:title="@string/SendEmail" />
+    <item android:icon="@drawable/detail_menu_sms_selector" android:id="@id/sendSms" android:title="@string/SendSms" />
+</menu>

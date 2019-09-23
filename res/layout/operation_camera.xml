@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/remote_option_container" android:background="@drawable/shape_bg_pop" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/remote_option_screenshot" style="@style/tablerow_back_radus">
+                <ImageView android:id="@id/screenshot_normal_icon" android:layout_width="26.0dip" android:layout_height="23.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/screenshot_normal" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/remotedesktop_tools_screenshot" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/screenshot_normal_icon" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" />
+            <RelativeLayout android:id="@id/rl_switch_remote_camera" style="@style/tablerow_back">
+                <ImageView android:id="@id/switch_camera_icon" android:layout_width="26.0dip" android:layout_height="23.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/desktop_menu_switchscreen_normal" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/remote_camera_switch" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/switch_camera_icon" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" style="@style/button_operation_conversation" />
+                <View android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/remote_option_definition" style="@style/tablerow_back">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/iv_remote_option_definition" android:layout_width="23.0dip" android:layout_height="21.0dip" android:src="@drawable/definition_sd_normal" android:layout_centerVertical="true" />
+                    <TextView android:enabled="false" android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/remote_option_definition_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/remote_camera_standard" android:layout_centerVertical="true" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" style="@style/button_operation_conversation" />
+            </RelativeLayout>
+            <View android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" />
+            <RelativeLayout android:id="@id/remote_option_image_setting" style="@style/tablerow_back">
+                <ImageView android:id="@id/image_setting_icon" android:layout_width="26.0dip" android:layout_height="23.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/image_setting_normal" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/remote_camera_image_setting" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/image_setting_icon" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" style="@style/button_operation_conversation" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/button_text_size" android:textColor="@color/white" android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/Cancel" style="@style/button_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_loading" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/gview_host_list_lanscan" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:divider="@null" android:dividerHeight="0.0dip" ptr:ptrAnimationStyle="flip" ptr:ptrShowIndicator="false" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/empty" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:gravity="center" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:src="@drawable/no_discovery_icon" android:layout_below="@id/no_lan_message" android:contentDescription="@null" />
+                <TextView android:textSize="16.0sp" android:textColor="#fff19f7c" android:gravity="center" android:id="@id/no_lan_host" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/lan_discovery_empty" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_color_discovery_empty_tips" android:gravity="center" android:id="@id/no_lan_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/lan_discovery_empty_message" android:layout_below="@id/no_lan_host" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/app_loading_frame_ani" />
+        <include layout="@layout/app_loading_frame_ani_special" />
+        <include android:id="@id/loading_view" android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/g_loading_view" />
+    </FrameLayout>
+</LinearLayout>

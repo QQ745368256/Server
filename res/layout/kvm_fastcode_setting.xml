@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/g_headtitle_5" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white_bac" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/forget_password_text_color" android:gravity="center" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/fastcode" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/text_empty" android:gravity="center|right" android:id="@id/fast_code" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="123 456 789" android:maxLength="11" android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white_bac" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/forget_password_text_color" android:gravity="center" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/forget_password_codes" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/text_empty" android:gravity="center|right" android:id="@id/verfy_code" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="" android:maxLength="11" android:layout_weight="1.0" android:inputType="number" />
+                <RelativeLayout android:id="@id/refersh" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="51.0dip" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:layout_width="23.0dip" android:layout_height="20.0dip" android:src="@drawable/hostlist_refresh_btn" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_gray_6A" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kvm_fast_message" />
+            <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/copy" android:layout_width="225.0dip" android:layout_height="@dimen/g_button_height" android:layout_marginTop="30.0dip" android:text="@string/share" style="@style/buttonLogin" />
+        </LinearLayout>
+        <include layout="@layout/app_loading_frame_ani" />
+        <include layout="@layout/app_loading_frame_ani_special" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="340.0dip" android:layout_centerInParent="true">
+        <RelativeLayout android:background="@drawable/spare_dialog_shape" android:layout_width="300.0dip" android:layout_height="170.0dip" android:layout_marginTop="160.0dip">
+            <RelativeLayout android:id="@id/to_develop_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="20.0dip">
+                <RelativeLayout android:id="@id/to_develop_tv" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <ImageView android:id="@id/input_info" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/input_space_icon" android:layout_centerVertical="true" />
+                    <EditText android:enabled="true" android:textSize="14.0sp" android:textColor="#ff000000" android:textColorHint="#ffcccccc" android:gravity="center|left" android:id="@id/to_develop_edit" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/to_develop_tip" android:singleLine="true" android:layout_toRightOf="@id/input_info" />
+                </RelativeLayout>
+                <View android:background="@color/bg_more_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="14.0dip" android:layout_below="@id/to_develop_tv" />
+            </RelativeLayout>
+            <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/spare" android:background="@drawable/space_button_selector" android:layout_width="fill_parent" android:layout_height="@dimen/g_button_height" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="20.0dip" android:text="@string/space" android:layout_below="@id/to_develop_view" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/title_view" android:background="@drawable/space_bg" android:layout_width="300.0dip" android:layout_height="180.0dip">
+            <RelativeLayout android:layout_gravity="right" android:id="@id/close" android:layout_width="40.0dip" android:layout_height="40.0dip">
+                <ImageView android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/close_space_pop" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_sunlogin" />
+            <TextView android:textSize="48.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/spare_number" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_tips" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

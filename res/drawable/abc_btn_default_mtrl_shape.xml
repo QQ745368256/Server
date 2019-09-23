@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    @dimen/abc_button_inset_horizontal_material改为0，@dimen/abc_button_inset_horizontal_material改为0，@dimen/abc_button_inset_vertical_material改为0，@dimen/abc_button_inset_vertical_material改为0-->
+<inset android:insetLeft="0" android:insetRight="0" android:insetTop="0" android:insetBottom="0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+<!--        @dimen/abc_control_corner_material改为0-->
+        <corners android:radius="1px" />
+        <solid android:color="@android:color/white" />
+<!--        android:left=@dimen/abc_button_padding_horizontal_material改为，android:top=@dimen/abc_button_padding_vertical_material改为top,android:right="@dimen/abc_button_padding_horizontal_material"改为,android:bottom="@dimen/abc_button_padding_vertical_material"改为-->
+        <padding android:left="@dimen/desktop_remote_toolbar_height" android:top="@dimen/desktop_remote_toolbar_img_width" android:right="@dimen/desktop_remote_toolbar_img_height" android:bottom="@dimen/desktop_remote_toolbar_img_blackscreen_width" />
+    </shape>
+</inset>

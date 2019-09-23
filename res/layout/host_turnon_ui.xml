@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_turnon_button" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="58.0dip">
+                <com.oray.sunlogin.widget.CircleImageView android:layout_gravity="center" android:id="@id/cv_off_host_pic" android:background="@null" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/hostlist_image_online" android:contentDescription="@null" app:civ_border_color="@color/white_19" app:civ_border_width="2.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                    <TextView android:textSize="24.0sp" android:textColor="@color/text_black22" android:ellipsize="end" android:id="@id/tv_off_host_name" android:layout_width="180.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/forget_password_text_color" android:ellipsize="end" android:id="@id/tv_off_host_info" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@id/turnon_anim_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <Button android:background="@drawable/host_power_up_button_glow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:id="@id/host_turnon_cycle" android:background="@drawable/host_power_up_button_cycle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <Button android:id="@id/btn_off_close" android:background="@drawable/icon_host_detail_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:padding="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/host_turnon_btn" android:background="@drawable/host_power_up_button_glow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+                <RelativeLayout android:id="@id/smart_socket_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/warning" android:contentDescription="@null" />
+                    <com.oray.sunlogin.widget.JustifyTextView android:textColor="#ffff8a56" android:id="@id/smart_socket_tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:text="@string/smart_socket_turn_on_tips" />
+                    <com.oray.sunlogin.widget.JustifyTextView android:textColor="#ffff8a56" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:text="@string/smart_socket_shutdown_tips" android:layout_below="@id/smart_socket_tips_text" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button android:textSize="14.0sp" android:textColor="@color/text_black4A" android:gravity="center" android:id="@id/btn_off_host_set" android:background="@drawable/shape_round_white" android:layout_width="225.0dip" android:layout_height="50.0dip" android:layout_marginBottom="21.0dip" android:text="@string/host_setting" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <include layout="@layout/app_loading_frame_ani" />
+        <include layout="@layout/app_loading_frame_ani_special" />
+    </FrameLayout>
+</LinearLayout>

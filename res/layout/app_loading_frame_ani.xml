@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oray.sunlogin.widget.DisableClickRelativeLayout android:id="@id/g_loading_viewgroup" android:background="@drawable/all_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oray.sunlogin.widget.ProgressIndicator android:gravity="center" android:id="@id/g_loading_text_textview" android:background="@drawable/progress_loading_animation" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="104.0dip" android:layout_height="104.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</com.oray.sunlogin.widget.DisableClickRelativeLayout>

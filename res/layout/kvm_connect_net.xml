@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_5" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <ImageView android:layout_width="13.0dip" android:layout_height="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/warn" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffff8a56" android:gravity="center_horizontal" android:id="@id/tip_message" android:layout_width="310.0dip" android:layout_height="wrap_content" android:text="@string/msg_kvm_connect_net" android:lineSpacingExtra="15.0dip" />
+    </LinearLayout>
+    <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/btn_kvm_connect_net_back" android:layout_marginTop="30.0dip" android:text="@string/i_know" style="@style/buttonLogin" />
+</LinearLayout>

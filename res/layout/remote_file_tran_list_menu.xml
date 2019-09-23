@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:background="#ffff3b30" android:layout_width="67.0dip" android:layout_height="62.0dip" android:src="@drawable/remote_file_clear" android:scaleType="center" android:text="@string/g_delete" android:contentDescription="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

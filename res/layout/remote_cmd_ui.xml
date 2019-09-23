@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/g_headtitle_5" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="top" android:autoLink="none" android:id="@id/edittext" android:background="@android:color/transparent" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:cursorVisible="true" android:singleLine="false" android:selectAllOnFocus="false" android:autoText="false" android:textCursorDrawable="@drawable/color_cursor" style="@style/editTextTouchStyle" />
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/relativelayout" android:background="#ffe1e1e1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#ff007aff" android:id="@id/history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/remote_cmd_command" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff007aff" android:id="@id/text_break" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/remote_cmd_interrupt_command" android:layout_toRightOf="@id/history" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff007aff" android:id="@id/end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/remote_cmd_complete" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_smart_function_bg" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/g_dialog_title" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:id="@id/bind_host_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/bind_host_popup_tips" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_host_popup_tips2" />
+        <ImageView android:id="@id/smart_function_tips_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/shutdown_tips" android:contentDescription="@null" />
+        <View android:background="@color/text_gray_d9" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <Button android:textSize="17.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/i_know" android:background="@drawable/function_left_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/i_know" android:layout_weight="1.0" />
+            <View android:background="@color/text_gray_d9" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <Button android:textSize="17.0sp" android:textColor="#ffff8a56" android:gravity="center" android:id="@id/host_function" android:background="@drawable/function_right_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/host_function" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

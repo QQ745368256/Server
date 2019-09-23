@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="170.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="150.0dip" android:layout_height="150.0dip">
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_enjoy_define_3" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerVertical="true" />
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_enjoy_define_4" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_enjoy_define_1" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_enjoy_define_2" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/load_editor" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:src="@drawable/editor_keyboard" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/editor_view" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="124.0dip" android:layout_centerInParent="true">
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_define_modify" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginBottom="44.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:key_custom_text_light="false" />
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_define_switch" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentBottom="true" app:key_custom_text_light="false" />
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_define_exit" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:key_custom_text_light="false" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_alignParentRight="true">
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_enjoy_define_7" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerVertical="true" />
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_enjoy_define_8" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_enjoy_define_5" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+        <com.oray.sunlogin.widget.CustomView android:id="@id/button_keycode_enjoy_define_6" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/free_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="57.0dip">
+        <FrameLayout android:id="@id/fl_back" android:paddingLeft="20.0dip" android:layout_width="57.0dip" android:layout_height="57.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/back_normal" />
+        </FrameLayout>
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="@string/timing" android:layout_centerInParent="true" />
+        <FrameLayout android:id="@id/fl_add" android:paddingRight="20.0dip" android:layout_width="57.0dip" android:layout_height="57.0dip" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center|right" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/timing_add" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_no_timing" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_black66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="235.0dip" android:text="@string/no_timing_hint1" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_black66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_timing_hint2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_timing_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="13.0dip">
+            <com.oray.sunlogin.recylerview.utils.FixedRecyclerView android:id="@id/timing_recyclerview" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include android:id="@id/lately_empty" android:visibility="visible" layout="@layout/lately_empty_view" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

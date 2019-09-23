@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/g_dialog_background" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center|left" android:id="@id/image_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/title_warring" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff2f2f2f" android:ellipsize="end" android:gravity="center" android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="52.0dip" android:text="this is title" android:singleLine="true" android:layout_centerHorizontal="true" />
+        <View android:id="@id/g_dialog_temp_line1" android:background="#fff29900" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/text_title" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff575757" android:ellipsize="end" android:id="@id/text_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="this is dialog message" android:layout_below="@id/g_dialog_temp_line1" />
+        <CheckBox android:textSize="16.0sp" android:textColor="#ff575757" android:ellipsize="end" android:id="@id/dialog_check" android:background="@null" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="20.0dip" android:button="@null" android:text="check this" android:singleLine="true" android:drawableLeft="@drawable/checkbox_select" android:drawablePadding="5.0dip" android:layout_below="@id/text_message" />
+        <View android:id="@id/g_dialog_temp_line2" android:background="#ffc5c5c5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/dialog_check" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_below="@id/g_dialog_temp_line2">
+            <Button android:textSize="16.0sp" android:textColor="#ff0091ff" android:gravity="center" android:id="@id/button_cancel" android:background="@drawable/g_dialog_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Cancel" android:layout_weight="1.0" />
+            <View android:background="#ffc5c5c5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <Button android:textSize="16.0sp" android:textColor="#ff0091ff" android:gravity="center" android:id="@id/button_ok" android:background="@drawable/g_dialog_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Confirm" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

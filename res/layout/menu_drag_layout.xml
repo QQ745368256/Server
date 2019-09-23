@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="#e6000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:background="@drawable/function_item_selector" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_margin="2.0dip">
+            <ImageView android:id="@id/function_item_keyboard_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/desktop_enjoy_defined_keyboard" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keyboard_defined" android:layout_below="@id/function_item_keyboard_img" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:background="@drawable/function_item_selector" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <ImageView android:id="@id/function_item_sound_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/desktop_enjoy_close_sound" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remotedesktop_tools_voice_close" android:layout_below="@id/function_item_sound_img" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:background="@drawable/function_item_selector" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_margin="2.0dip">
+            <ImageView android:id="@id/function_item_record_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/desktop_enjoy_screen_record" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remotedesktop_tools_screen_recorder" android:layout_below="@id/function_item_record_img" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/drag_menu_tips" android:layout_below="@id/top_view" />
+    <Button android:textSize="14.0sp" android:textColor="#ff222222" android:layout_gravity="center_horizontal" android:id="@id/i_know" android:background="@drawable/shape_drag_button" android:paddingLeft="40.0dip" android:paddingTop="4.0dip" android:paddingRight="40.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/i_know" android:layout_below="@id/tips" android:layout_centerHorizontal="true" />
+</RelativeLayout>

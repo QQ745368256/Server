@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="80.0dip" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="80.0dip" android:layout_height="80.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/child_image" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/default_picture_icon" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/upload_thumbnail_pictures_no" android:scaleType="fitXY" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/default_video_icon" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/upload_thumbnail_video_no" android:scaleType="fitXY" android:contentDescription="@null" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/video_bar" android:background="@drawable/video_bar" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_icon" android:contentDescription="@null" />
+            <TextView android:gravity="right" android:layout_gravity="bottom|center" android:id="@id/child_video_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawablePadding="6.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <CheckBox android:gravity="center" android:layout_gravity="center" android:id="@id/child_checkbox" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/remote_file_upload_checkbox_selector" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/remote_option_container" android:background="@drawable/shape_bg_pop" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/remote_desktop_kvm_image_setting" style="@style/tablerow_back">
+                <ImageView android:id="@id/desktop_image_setting" android:src="@drawable/remote_desktop_kvm_color_normal" style="@style/operation_imageView" />
+                <TextView android:text="@string/remote_desktop_kvm_color_setting" android:layout_toRightOf="@id/desktop_image_setting" style="@style/operation_textView" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" style="@style/button_operation_conversation" />
+            </RelativeLayout>
+            <View android:id="@id/remote_desktop_shutdown_line" android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" />
+            <RelativeLayout android:id="@id/operation_gesture_guide" style="@style/tablerow_back">
+                <ImageView android:id="@id/desktop_option_gesture_imageview" android:src="@drawable/desktop_option_gesture_img" style="@style/operation_imageView" />
+                <TextView android:text="@string/OperationInstruction" android:layout_toRightOf="@id/desktop_option_gesture_imageview" style="@style/operation_textView" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" style="@style/button_operation_conversation" />
+            </RelativeLayout>
+            <View android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <Button android:textSize="@dimen/button_text_size" android:textColor="@color/white" android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/Cancel" style="@style/button_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

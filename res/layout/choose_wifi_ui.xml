@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="@dimen/g_titlebar_height" layout="@layout/g_headtitle_5" />
+    <RelativeLayout android:background="@color/white_bac" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip">
+        <ImageView android:id="@id/kvm_wifi_choose_status" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/checked" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_black22" android:gravity="center_vertical" android:id="@id/tv_connecting_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_wifisingal" android:layout_width="20.0dip" android:layout_height="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/wifisingal_level" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/choose_wifi_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_black6A" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/choose_internet" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_loadingwifi" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+        <ListView android:id="@id/lv_wifi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:listSelector="@color/transparent" android:divider="#ffe1e1e1" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_gray_6A" android:gravity="center_horizontal" android:id="@id/choose_wifi_tips" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/choose_wifi_tips" />
+</LinearLayout>

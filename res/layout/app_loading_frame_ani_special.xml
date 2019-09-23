@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oray.sunlogin.widget.DisableClickRelativeLayout android:id="@id/g_loading_viewgroup_special" android:background="@drawable/all_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/g_loading_iv" android:background="@drawable/icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/loading_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/loading" android:layout_below="@id/g_loading_iv" android:layout_centerInParent="true" />
+</com.oray.sunlogin.widget.DisableClickRelativeLayout>
