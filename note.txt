@@ -2,3 +2,78 @@
 解决xml报错，修改格式为：xxx改为xxx
 APP签名问题
 com/yolanda/nohttp/db/DBManager.java数据库使用的是SQLite，账号密码
+----------------------------------------------------------------------------------------------------
+res/drawable/abc_ic_ab_back_material.xml报错提示信息：
+vector
+requires API level 21 (current min is 17) or building with Android Gradle plugin 1.4 or higher
+Inspection info:This check scans through all the Android API calls in the application and warns about any calls
+that are not available on all versions targeted by this application (according to its minimum SDK attribute in the manifest).
+需要API级别21(目前最小是17)或建设与Android Gradle插件1.4或更高版本
+检验信息:这个检查扫描所有的Android API调用应用程序和警告任何调用,没有显示这个应用程序的目标(在所有版本最低SDK在manifest属性)。
+----解决办法：工程环境为external libraries/Android API 29 platform高于API 21
+If you really want to use this API and don't need to support older devices just set the minSdkVersion in your build.grad1e or AndroidManifest.xm1 files.
+如果你真的想使用这个API和不需要支持旧设备 设置minSdkVersion在你的build.grad1e或AndroidManifest.xml文件。
+---- 解决办法：AndroidManifest.xml原文：android:minSdkVersion="17" android:targetSdkVersion="28"改28为29
+If your code is deliberately accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can
+annotate your class or method with the TargetApi annotation specifying the local minimum SDK to apply, such as TargetApi (11)，such that this check considers 11 rather than your
+manifest file's minimum SDK as the required API level.
+如果你的代码是故意访问更新的api,你保证(如有条件执行),这段代码只被调用在一个受支持的平台上,然后你就可以
+注释你的类或方法在TargetApi注释指定本地最低SDK应用,如TargetApi(11),这样,这个检查认为11而不是你
+清单文件所需的最低SDK API级别作为要求的API级别。
+----解决办法：双击shift搜索到TargetApi.java发现项目无关API级别
+If you are deliberately setting android: attributes in style definitions, make sure you place this in a values-vNN folder in order to avoid running into runtime conflicts on certain devices
+where manufacturers have added custom attributes whose ids conflict with the new ones on later platforms.
+Similary, you can use tools:targetApi= 11 in an XML file to indicate that the element will only be inflated in an adequate context.
+如果你是故意设置 android:属性在样式定义,确保你把这个值-vNN文件夹中为了避免遇到某些设备上运行时的冲突
+在制造商已经添加自定义属性的后平台上的ids与新的冲突。
+同样,您可以使用工具:targetApi = 11在XML文件中表明元素只会充斥在适当的上下文。
+----解决办法：搜索targetApi = 11无结果
+Issue id: NewApi
+问题id: NewApi
+Attribute autoMirrored is only used in API level 19 and higher (current min is 17)
+Inspection info:This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the minsdkVersion attribute).
+属性autoMirrored（汽车反光镜？）只是用于API级别19和更高(目前最低是17)
+检验信息:检查发现属性设置在一个版本中引入的新XML文件比老版本的目标应用程序(minsdkVersion属性)。
+----解决办法：双击shift搜索minsdkVersion把Android Lint 开关打开
+This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance or functionality of your application,
+you should consider finding an alternative way to achieve the same result with only available attributes,
+and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.
+Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new <tae> element in layouts introduced in API 21.
+Issue id: UnusedAttribute
+这不是一个错误;应用程序会忽略属性。然而,如果属性对应用程序的外观或功能很重要,
+你应该考虑寻找另一种方式来达到相同的结果只有可用的属性,
+然后你可以选择layout-vNN文件夹中创建一个副本布局将神经网络用于API或更高版本,您可以利用更新的属性。
+注意:这个检查不仅适用于属性。例如,一些标签也可以不用的,比如新< tae >元素布局中引入API 21。
+问题id: 未使用的属性
+----解决办法：layout-vNN文件夹并不存在与本工程中
+<vector android:tint= "?colorControlNormal android:height=”24.0dip° android:width= "24.0dip android:autoMirrored="true androidwiewportWidt..
+----------------------------------------------------------------------------------------------------
+event log【控制台信息】
+Migrate Project to Gradle?
+This project does not use the Gradle build system. We recommend that you migrate to using the Gradle build system.
+----------------------------------------------------------------------------------------------------
+导航栏菜单：Build-Generate Signed Bundle / APK...生成如下信息：
+Error:Internal error: (java.lang.ClassNotFoundException) com.google.wireless.android.sdk.stats.IntellijIndexingStats$Index
+java.lang.ClassNotFoundException: com.google.wireless.android.sdk.stats.IntellijIndexingStats$Index
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at com.intellij.util.indexing.counters.IndexCounters.<clinit>(IndexCounters.java:34)
+	at com.intellij.util.indexing.impl.MapReduceIndex.<init>(MapReduceIndex.java:85)
+	at org.jetbrains.jps.backwardRefs.index.CompilerReferenceIndex$CompilerMapReduceIndex.<init>(CompilerReferenceIndex.java:232)
+	at org.jetbrains.jps.backwardRefs.index.CompilerReferenceIndex.<init>(CompilerReferenceIndex.java:79)
+	at org.jetbrains.jps.backwardRefs.JavaCompilerBackwardReferenceIndex.<init>(JavaCompilerBackwardReferenceIndex.java:12)
+	at org.jetbrains.jps.backwardRefs.JavaBackwardReferenceIndexWriter.initialize(JavaBackwardReferenceIndexWriter.java:79)
+	at org.jetbrains.jps.incremental.java.JavaBuilder.buildStarted(JavaBuilder.java:148)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.runBuild(IncProjectBuilder.java:363)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.build(IncProjectBuilder.java:178)
+	at org.jetbrains.jps.cmdline.BuildRunner.runBuild(BuildRunner.java:139)
+	at org.jetbrains.jps.cmdline.BuildSession.runBuild(BuildSession.java:302)
+	at org.jetbrains.jps.cmdline.BuildSession.run(BuildSession.java:135)
+	at org.jetbrains.jps.cmdline.BuildMain$MyMessageHandler.lambda$channelRead0$0(BuildMain.java:228)
+	at org.jetbrains.jps.service.impl.SharedThreadPoolImpl.lambda$executeOnPooledThread$0(SharedThreadPoolImpl.java:42)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
