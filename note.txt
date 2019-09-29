@@ -80,4 +80,6 @@ java.lang.ClassNotFoundException: com.google.wireless.android.sdk.stats.Intellij
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 ----------------------------------------------------------------------------------------------------
-鼠标选中note.txt-Git-commit file...在对话框中点击commit
+鼠标选中note.txt-Git-commit file...在对话框中点击commit后弹出code analysis窗口，可以看到众多error，
+比如Error:(2, 2) `<vector>` requires API level 21 (current min is 17) or building with Android Gradle plugin 1.4 or higher
+点击发现是res/drawable/abc_ic_ab_back_material.xml报错
